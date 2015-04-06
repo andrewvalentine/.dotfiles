@@ -1,12 +1,13 @@
 # filesystem
 alias music='cd /Users/andrew/Music/iTunes/iTunes\ Media/Music/'
-alias cfg="vi ~/.ssh/config"
+alias cfg="vi ~/.ssh/.config"
 alias hosts="vi ~/.ssh/known_hosts"
 alias reboot="sudo /sbin/shutdown -r now"
 alias shutdown="sudo /sbin/shutdown -h now"
 alias bash="vi ~/.bash_profile"
 alias mky="cd /Users/Shared/munki_repo"
 alias stopjunos="~/scripts/stopjunospulse/stopjunos.sh"
+alias startjunos="~/scripts/stopjunospulse/startjunos.sh"
 alias edit="open -a TextWrangler.app $1"
 
 # system
