@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export PATH="/usr/local/git/bin:$PATH"
 source .alias
 
 ## useful commands
