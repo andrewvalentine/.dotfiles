@@ -7,7 +7,7 @@ alias shutdown="sudo /sbin/shutdown -h now"
 alias bash="vi ~/.bash_profile"
 alias mky="cd /Users/Shared/munki_repo"
 alias stopjunos="~/scripts/stopjunospulse/stopjunos.sh"
-alias startjunos="~/scripts/stopjunospulse/startjunos.sh"
+alias startjunos="~/scripts/startjunospulse/startjunos.sh"
 alias edit="open -a TextWrangler.app $1"
 
 # system
