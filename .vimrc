@@ -12,5 +12,4 @@ set hlsearch
 """""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
-
-colorscheme github
+colorscheme solarized
