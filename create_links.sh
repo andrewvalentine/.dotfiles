@@ -1,8 +1,8 @@
 #!/bin/bash
-ln -s /Users/$USER/.dotfiles/.alias $HOME/
-ln -s /Users/$USER/.dotfiles/.bash_profile $HOME/
-ln -s /Users/$USER/.dotfiles/.ssh/ $HOME/
-ln -s /Users/$USER/.dotfiles/.tmux.conf $HOME/
-ln -s /Users/$USER/.dotfiles/.vim $HOME/
-ln -s /Users/$USER/.dotfiles/.vimrc $HOME/
-ln -s /Users/$USER/.dotfiles/com.googlecode.iterm2.plist $HOME/Library/Preferences/
+ln -s /$USER/.dotfiles/.alias $HOME/
+ln -s /$USER/.dotfiles/.bash_profile $HOME/
+ln -s /$USER/.dotfiles/.ssh/ $HOME/
+ln -s /$USER/.dotfiles/.tmux.conf $HOME/
+ln -s /$USER/.dotfiles/.vim $HOME/
+ln -s /$USER/.dotfiles/.vimrc $HOME/
+ln -s /$USER/.dotfiles/com.googlecode.iterm2.plist $HOME/Library/Preferences/
