@@ -1,6 +1,6 @@
 # filesystem
 alias music='cd /Users/andrew/Music/iTunes/iTunes\ Media/Music/'
-alias cfg="vi ~/.ssh/.config"
+alias cfg="vi ~/.ssh/config"
 alias hosts="vi ~/.ssh/known_hosts"
 alias reboot="sudo /sbin/shutdown -r now"
 alias shutdown="sudo /sbin/shutdown -h now"
