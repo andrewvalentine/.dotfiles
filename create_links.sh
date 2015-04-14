@@ -5,4 +5,4 @@ ln -s /$USER/.dotfiles/.ssh/ $HOME/
 ln -s /$USER/.dotfiles/.tmux.conf $HOME/
 ln -s /$USER/.dotfiles/.vim $HOME/
 ln -s /$USER/.dotfiles/.vimrc $HOME/
-ln -s /$USER/.dotfiles/com.googlecode.iterm2.plist $HOME/Library/Preferences/
+ln -sf /$USER/.dotfiles/com.googlecode.iterm2.plist $HOME/Library/Preferences/
