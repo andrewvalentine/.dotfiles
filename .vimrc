@@ -13,3 +13,4 @@ set hlsearch
 " Enable syntax highlighting
 syntax enable
 colorscheme solarized
+set background=dark

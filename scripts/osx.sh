@@ -21,3 +21,13 @@ chflags nohidden ~/Library
 
 # New Finder shows $HOME by default
 defaults write com.apple.finder NewWindowTarget PfHm
+
+# Use column view in Finder by default
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+
+###############################################################################
+# Dock									      #
+###############################################################################
+
+# Autohide dock
+defaults write com.apple.dock autohide -bool TRUE
