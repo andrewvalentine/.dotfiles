@@ -8,3 +8,4 @@ source .alias
 #turn off verbose boot = sudo nvram boot-args=
 #unload junos pulse = launchctl unload -w /Library/LaunchAgents/net.juniper.pulsetray.plist
 #load junos pulse = launchctl load -w /Library/LaunchAgents/net.juniper.pulsetray.plist
+#lock screen = /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
