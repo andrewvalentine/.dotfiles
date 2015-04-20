@@ -9,3 +9,5 @@ source .alias
 #unload junos pulse = launchctl unload -w /Library/LaunchAgents/net.juniper.pulsetray.plist
 #load junos pulse = launchctl load -w /Library/LaunchAgents/net.juniper.pulsetray.plist
 #lock screen = /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
+#show storage volumes = diskutil corestorage list
+#unlock encrypted disk = diskutil corestorage unlockVolume UUID -stdinpassphrase
