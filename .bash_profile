@@ -11,3 +11,4 @@ source .alias
 #lock screen = /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
 #show storage volumes = diskutil corestorage list
 #unlock encrypted disk = diskutil corestorage unlockVolume UUID -stdinpassphrase
+#sleep from terminal = pmset sleepnow
