@@ -12,3 +12,6 @@ source .alias
 #show storage volumes = diskutil corestorage list
 #unlock encrypted disk = diskutil corestorage unlockVolume UUID -stdinpassphrase
 #sleep from terminal = pmset sleepnow
+
+export NVM_DIR="/Users/andrew/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
