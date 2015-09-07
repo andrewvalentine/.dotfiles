@@ -1,6 +1,6 @@
 #!/bin/bash
 export PATH="/usr/local/git/bin:$PATH"
-source .alias
+source ~/.alias
 
 ## useful commands
 #system profiler via terminal = /usr/sbin/system_profiler
