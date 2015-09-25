@@ -1,6 +1,10 @@
 #!/bin/bash
 export PATH="/usr/local/git/bin:$PATH"
 source .alias
+export NVM_DIR="/Users/andrew/.nvm"
+
+#This loads NVM
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 ## useful commands
 #system profiler via terminal = /usr/sbin/system_profiler
@@ -13,5 +17,4 @@ source .alias
 #unlock encrypted disk = diskutil corestorage unlockVolume UUID -stdinpassphrase
 #sleep from terminal = pmset sleepnow
 #release/renew DHCP = sudo ipconfig set (DEVICEINTERFACE) DHCP
-export NVM_DIR="/Users/andrew/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#xcode license = sudo xcrun cc
