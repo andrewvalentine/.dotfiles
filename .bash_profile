@@ -1,10 +1,14 @@
 #!/bin/bash
 export PATH="/usr/local/git/bin:$PATH"
+<<<<<<< HEAD
 source .alias
 export NVM_DIR="/Users/andrew/.nvm"
 
 #This loads NVM
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+=======
+source ~/.alias
+>>>>>>> 03510ebf5dac065264b32489604d9731c2dc5fdf
 
 ## useful commands
 #system profiler via terminal = /usr/sbin/system_profiler
