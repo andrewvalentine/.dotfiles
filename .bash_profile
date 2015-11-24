@@ -1,5 +1,8 @@
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
+
 export PATH="/usr/local/git/bin:$PATH"
-source .alias
 export PS1="\h:\W 💩  $ "
 
 #This loads NVM
