@@ -1,10 +1,13 @@
-#!/bin/bash
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
+
 export PATH="/usr/local/git/bin:$PATH"
-source .alias
+export PS1="\h:\W 💩  $ "
 
 #This loads NVM
-export NVM_DIR="/Users/andrew/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+#export NVM_DIR="/Users/andrew/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 ## useful commands
 #system profiler via terminal = /usr/sbin/system_profiler
@@ -18,3 +21,5 @@ export NVM_DIR="/Users/andrew/.nvm"
 #sleep from terminal = pmset sleepnow
 #release/renew DHCP = sudo ipconfig set (DEVICEINTERFACE) DHCP
 #xcode license = sudo xcrun cc
+export WORKON_HOME=~/Envs
+source /usr/local/bin/virtualenvwrapper.sh
