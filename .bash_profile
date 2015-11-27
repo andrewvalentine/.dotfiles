@@ -3,7 +3,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 export PATH="/usr/local/git/bin:$PATH"
-export PS1="\h:\W 💩  $ "
+export PS1="[\u@\h \w 💩 ]$ "
 
 #This loads NVM
 #export NVM_DIR="/Users/andrew/.nvm"
