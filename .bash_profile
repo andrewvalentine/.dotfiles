@@ -7,7 +7,7 @@ fi
 export PATH="/usr/local/git/bin:$PATH"
 
 # Modify prompt
-export PS1="[\u@\h \w 💩 ]$ "
+export PS1="[\u@\h \w]\\$ "
 
 # Set colours
 export CLICOLOR=1
