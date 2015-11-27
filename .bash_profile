@@ -5,13 +5,9 @@ fi
 
 # Modify path
 export PATH="/usr/local/git/bin:$PATH"
-<<<<<<< HEAD
-export PS1="[\u@\h \w 💩 ]$ "
-=======
 
 # Modify prompt
-export PS1="\h:\W 💩  $ "
->>>>>>> 9f60805cd0b62f57aee0223459b3eb0c15a3e596
+export PS1="[\u@\h \w 💩 ]$ "
 
 # Set colours
 export CLICOLOR=1
