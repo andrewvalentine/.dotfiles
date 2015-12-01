@@ -82,48 +82,22 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 2</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dotfiles</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 470}</string>
+	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
-	<key>NSTableView Columns KeyBingingTable</key>
-	<array>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErATCG
-		</data>
-		<string>198</string>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErATGG
-		</data>
-		<string>302</string>
-	</array>
-	<key>NSTableView Hidden Columns KeyBingingTable</key>
-	<array/>
-	<key>NSTableView Sort Ordering KeyBingingTable</key>
-	<array/>
-	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
-	<dict>
-		<key>TB Is Shown</key>
-		<integer>1</integer>
-	</dict>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>1257 89 532 265 0 0 1920 1057 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>693 362 924 485 0 0 1920 1057 </string>
-	<key>NSWindow Frame SUStatusFrame</key>
-	<string>264 643 384 129 0 0 1920 1057 </string>
+	<string>471 316 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 26 1914 1031 0 0 1920 1057 </string>
+	<string>0 26 1438 851 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>2044 205 1215 768 1920 180 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -834,7 +808,7 @@
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
-			<string>xterm</string>
+			<string>xterm-256color</string>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Triggers</key>
@@ -5216,12 +5190,12 @@
 			<string>/Users/av13121</string>
 		</dict>
 	</array>
-	<key>NoSyncNeverRemindPrefsChangesCopy</key>
+	<key>NoSyncNeverRemindPrefsChangesLost</key>
 	<true/>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>454000529.676467</real>
+	<real>457278282.29606903</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>470224043.86855</real>
+	<real>470653336.91747397</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -5286,7 +5260,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-11-26T09:46:29Z</date>
+	<date>2015-12-01T09:01:30Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
