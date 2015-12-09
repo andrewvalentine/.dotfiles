@@ -33,3 +33,4 @@ source /usr/local/bin/virtualenvwrapper.sh
 #sleep from terminal = pmset sleepnow
 #release/renew DHCP = sudo ipconfig set (DEVICEINTERFACE) DHCP
 #xcode license = sudo xcrun cc
+#create bootable img = hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/os.iso

@@ -95,9 +95,13 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>471 316 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
+<<<<<<< Updated upstream
 	<string>0 26 1438 851 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>2044 205 1215 768 1920 180 1440 877 </string>
+=======
+	<string>0 4 1920 1053 0 0 1920 1057 </string>
+>>>>>>> Stashed changes
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -5195,7 +5199,11 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>457278282.29606903</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
+<<<<<<< Updated upstream
 	<real>470653336.91747397</real>
+=======
+	<real>471343740.26429999</real>
+>>>>>>> Stashed changes
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -5260,7 +5268,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
+<<<<<<< Updated upstream
 	<date>2015-12-01T09:01:30Z</date>
+=======
+	<date>2015-12-09T08:48:51Z</date>
+>>>>>>> Stashed changes
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
