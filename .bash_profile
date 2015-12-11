@@ -17,12 +17,18 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 export WORKON_HOME=~/Envs
 source /usr/local/bin/virtualenvwrapper.sh
 
+# Set rbenv and gem
+export RBENV_ROOT="$(brew --prefix rbenv)"
+export GEM_HOME="$(brew --prefix)/opt/gems"
+export GEM_PATH="$(brew --prefix)/opt/gems"
+
 #This loads NVM
 #export NVM_DIR="/Users/andrew/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 ## useful commands
 #system profiler via terminal = /usr/sbin/system_profiler
+#get serial number = system_profiler SPHardwareDataType
 #turn on verbose boot = sudo nvram boot-args="-v"
 #turn off verbose boot = sudo nvram boot-args=
 #unload junos pulse = launchctl unload -w /Library/LaunchAgents/net.juniper.pulsetray.plist
