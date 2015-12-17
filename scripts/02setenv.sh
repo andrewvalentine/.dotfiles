@@ -8,8 +8,9 @@ brew update && brew upgrade
 
 # Install brew packages
 echo "Installing brew packages"
-# Install git
+# Install and configure git
 brew install git
+git config --global user.email "andrew.r.valentine@gmail.com"
 
 # Install python
 brew install python
