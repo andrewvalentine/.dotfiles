@@ -11,27 +11,17 @@ echo "Installing brew packages"
 # Install and configure git
 brew install git
 git config --global user.email "andrew.r.valentine@gmail.com"
-
-# Install python
 brew install python
-
-# Install wget
 brew install wget
-
-# Install tmux
 brew install tmux
-
-# Install htop
 brew install htop-osx
-
-# Install osxutils
-
 brew install osxutils
+brew tap caskroom/cask
 
 # Install pip packages
 echo "Installing pip packages"
 # Install csvkit
-pip install csvkik
+pip install csvkit
 
 # Install virtualenv and virtualenvwrapper
 pip install virtualenv virtualenvwrapper
@@ -39,3 +29,22 @@ pip install virtualenv virtualenvwrapper
 # Make ENV
 source ~/.bash_profile
 mkdir -p $WORKON_HOME
+
+# Install The Luggage
+echo "Installing The Luggage"
+
+git clone https://github.com/unixorn/luggage.git
+cd luggage
+make pkg
+installer -target / -pkg ./luggage-*.pkg
+
+# Checks if this is a personal or professional machine. If personal, installs software accessible on professional machines via MSC
+
+CN=$(/bin/hostname)
+if [[ $CN =~ *".bris.ac.uk"* ]]; then
+brew cask install google-chrome
+brew cask install atom
+brew cask install iterm2
+else
+echo "Done"
+fi
