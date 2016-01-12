@@ -44,8 +44,9 @@ if [[ $CN =~ *".bris.ac.uk"* ]]; then
 echo "Installing AutoPkg"
 
 git clone https://github.com/autopkg/autopkg.git /Users/$USER/Downloads/
-/Users/$USER/Downloads/autopkg/Scripts/install.sh
-autopkg repo-add hjuutilainen-recipes killahquam-recipes cgerke-recipes rtrouton-recipes
+cd /Users/$USER/Downloads/autopkg/
+sh Scripts/install.sh
+autopkg repo-add recipes hjuutilainen-recipes killahquam-recipes cgerke-recipes rtrouton-recipes
 autopkg run GoogleChrome.install Atom.install Slack.install XQuartz.install
 
 else
