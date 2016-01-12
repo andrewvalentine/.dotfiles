@@ -41,13 +41,13 @@ CN=$(/bin/hostname)
 USER=$(/bin/ls -l /dev/console | /usr/bin/awk '{ print $3 }')
 
 if [[ $CN =~ *".bris.ac.uk"* ]]; then
-echo "Installing AutoPkg"
+echo "Personal machine - installing Autopkg!"
 
-git clone https://github.com/autopkg/autopkg.git /Users/$USER/Downloads/
+git clone https://github.com/autopkg/autopkg.git /Users/$USER/Downloads/autopkg
 cd /Users/$USER/Downloads/autopkg/
-sh Scripts/install.sh
-autopkg repo-add recipes hjuutilainen-recipes killahquam-recipes cgerke-recipes rtrouton-recipes
-autopkg run GoogleChrome.install Atom.install Slack.install XQuartz.install
+/bin/sh Scripts/install.sh
+/usr/local/bin/autopkg repo-add recipes hjuutilainen-recipes killahquam-recipes cgerke-recipes rtrouton-recipes
+/usr/local/bin/autopkg run GoogleChrome.install Atom.install Slack.install XQuartz.install iTerm2.install
 
 else
 echo "Work machine - nothing left to do"
