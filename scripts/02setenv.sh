@@ -20,10 +20,7 @@ brew tap caskroom/cask
 
 # Install pip packages
 echo "Installing pip packages"
-# Install csvkit
 pip install csvkit
-
-# Install virtualenv and virtualenvwrapper
 pip install virtualenv virtualenvwrapper
 
 # Make ENV
@@ -38,13 +35,19 @@ cd luggage
 make pkg
 installer -target / -pkg ./luggage-*.pkg
 
-# Checks if this is a personal or professional machine. If personal, installs software accessible on professional machines via MSC
+# Checks if this is a personal or professional machine. If personal, sets up AutoPkg and installs software
 
 CN=$(/bin/hostname)
+USER=$(/bin/ls -l /dev/console | /usr/bin/awk '{ print $3 }')
+
 if [[ $CN =~ *".bris.ac.uk"* ]]; then
-brew cask install google-chrome
-brew cask install atom
-brew cask install iterm2
+echo "Installing AutoPkg"
+
+git clone https://github.com/autopkg/autopkg.git /Users/$USER/Downloads/
+/Users/$USER/Downloads/autopkg/Scripts/install.sh
+autopkg repo-add hjuutilainen-recipes killahquam-recipes cgerke-recipes rtrouton-recipes
+autopkg run GoogleChrome.install Atom.install Slack.install XQuartz.install
+
 else
-echo "Done"
+echo "Work machine - nothing left to do"
 fi
