@@ -14,6 +14,7 @@ defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
 #Add bris.ac.uk search domains
 networksetup -setsearchdomains Ethernet users.bris.ac.uk isys.bris.ac.uk fen.bris.ac.uk cs.bris.ac.uk een.bris.ac.uk enm.bris.ac.uk cen.bris.ac.uk men.bris.ac.uk bris.ac.uk
 networksetup -setsearchdomains Wi-Fi users.bris.ac.uk isys.bris.ac.uk fen.bris.ac.uk cs.bris.ac.uk een.bris.ac.uk enm.bris.ac.uk cen.bris.ac.uk men.bris.ac.uk bris.ac.uk
+networksetup -setsearchdomains "Thunderbolt Ethernet Slot 1" users.bris.ac.uk isys.bris.ac.uk fen.bris.ac.uk cs.bris.ac.uk een.bris.ac.uk enm.bris.ac.uk cen.bris.ac.uk men.bris.ac.uk bris.ac.uk
 
 #Turn off Bluetooth
 defaults write com.apple.Bluetooth ControllerPowerState 0

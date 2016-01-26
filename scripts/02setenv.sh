@@ -32,10 +32,9 @@ mkdir -p $WORKON_HOME
 echo "Installing The Luggage"
 
 git clone https://github.com/unixorn/luggage.git ~/Downloads/the-luggage
-/usr/bin/cd ~/Downloads/the-luggage
-make pkg
-/usr/sbin/installer -target / -pkg ./luggage-*.pkg
-/usr/bin/cd ~
+cd ~/Downloads/the-luggage
+make bootstrap_files
+cd ~
 /bin/rm -rf Downloads/the-luggage
 
 # Checks if this is a personal or professional machine. If personal, sets up AutoPkg and installs software
@@ -46,12 +45,13 @@ make pkg
 #if [[ $CN =~ *".bris.ac.uk"* ]]; then
 echo "Installing Autopkg!"
 
-git clone https://github.com/autopkg/autopkg.git /Users/$USER/Downloads/autopkg
-/usr/bin/cd /Users/$USER/Downloads/autopkg/
-/bin/sh Scripts/install.sh
-/usr/local/bin/autopkg repo-add recipes hjuutilainen-recipes killahquam-recipes cgerke-recipes rtrouton-recipes jleggat-recipes andrewvalentine-recipes
+git clone https://github.com/autopkg/autopkg.git ~/Downloads/autopkg
+cd ~/Downloads/autopkg/
+sudo /bin/sh Scripts/install.sh
+/usr/local/bin/autopkg repo-add recipes hjuutilainen-recipes killahquam-recipes cgerke-recipes rtrouton-recipes jleggat-recipes andrewvalentine-recipes scriptingosx-recipes 
 /usr/local/bin/autopkg run GoogleChrome.install Atom.install Slack.install XQuartz.install iTerm2.install MunkiAdmin.install
-/bin/rm -rf /USERS/$USER/Downloads/autopkg
+cd ~
+/bin/rm -rf ~/Downloads/autopkg
 
 echo "Installing Atom packages"
 
