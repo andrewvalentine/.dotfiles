@@ -19,10 +19,14 @@ networksetup -setsearchdomains "Thunderbolt Ethernet Slot 1" users.bris.ac.uk is
 # Turn off Bluetooth
 defaults write com.apple.Bluetooth ControllerPowerState 0
 
-## Date/time configuration
+## Menu bar configuration 
+# Date/time configuration
 defaults write com.apple.menuextra.clock DateFormat = "d MMM  HH:mm"
 defaults write com.apple.menuextra.clock FlashDateSeparators -int 0
 defaults write com.apple.menuextra.clock IsAnalog -int 0
+# Battery meter config
+defaults write com.apple.menuextra.battery ShowPercent -string YES
+
 
 ## Dock configuration
 # autohide
