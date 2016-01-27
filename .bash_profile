@@ -45,3 +45,4 @@ export HOMEBREW_GITHUB_API_TOKEN=6a11ac9063bd70b916c49d25d78bf2f2eff65fd7
 #create bootable img = hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/os.iso
 #unmount disk = diskutil unmountDisk /dev/diskN
 #create bootable disk = sudo dd if=/path/to/downloaded.img of=/dev/rdiskN bs=1m
+#if ARD locks screen = ps -ax | grep AppleVNCServer
