@@ -48,7 +48,7 @@ echo "Installing Autopkg!"
 git clone https://github.com/autopkg/autopkg.git ~/Downloads/autopkg
 cd ~/Downloads/autopkg/
 sudo /bin/sh Scripts/install.sh
-/usr/local/bin/autopkg repo-add recipes hjuutilainen-recipes killahquam-recipes cgerke-recipes rtrouton-recipes jleggat-recipes andrewvalentine-recipes scriptingosx-recipes 
+/usr/local/bin/autopkg repo-add recipes timsutton-recipes hjuutilainen-recipes killahquam-recipes cgerke-recipes rtrouton-recipes jleggat-recipes andrewvalentine-recipes scriptingosx-recipes homebysix-recipes
 /usr/local/bin/autopkg run GoogleChrome.install Atom.install Slack.install XQuartz.install iTerm2.install MunkiAdmin.install
 cd ~
 /bin/rm -rf ~/Downloads/autopkg

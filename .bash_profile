@@ -10,8 +10,8 @@ export PATH="/usr/local/git/bin:$PATH"
 export PS1="[\u@\h \w]\\$ "
 
 # Set colours
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
+#export CLICOLOR=1
+#export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # Set venv home
 export WORKON_HOME=~/Envs
