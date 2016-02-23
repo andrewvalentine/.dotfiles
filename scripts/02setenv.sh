@@ -20,6 +20,7 @@ brew tap caskroom/cask
 
 # Install pip packages
 echo "Installing pip packages"
+pip install --upgrade pip
 pip install csvkit
 pip install virtualenv virtualenvwrapper
 
@@ -30,25 +31,33 @@ mkdir -p $WORKON_HOME
 # Install The Luggage
 echo "Installing The Luggage"
 
-git clone https://github.com/unixorn/luggage.git
-cd luggage
-make pkg
-installer -target / -pkg ./luggage-*.pkg
+git clone https://github.com/unixorn/luggage.git ~/Downloads/the-luggage
+cd ~/Downloads/the-luggage
+make bootstrap_files
+cd ~
+/bin/rm -rf Downloads/the-luggage
 
 # Checks if this is a personal or professional machine. If personal, sets up AutoPkg and installs software
 
-CN=$(/bin/hostname)
-USER=$(/bin/ls -l /dev/console | /usr/bin/awk '{ print $3 }')
+#CN=$(/bin/hostname)
+#USER=$(/bin/ls -l /dev/console | /usr/bin/awk '{ print $3 }')
 
-if [[ $CN =~ *".bris.ac.uk"* ]]; then
-echo "Personal machine - installing Autopkg!"
+#if [[ $CN =~ *".bris.ac.uk"* ]]; then
+echo "Installing Autopkg!"
 
-git clone https://github.com/autopkg/autopkg.git /Users/$USER/Downloads/autopkg
-cd /Users/$USER/Downloads/autopkg/
-/bin/sh Scripts/install.sh
-/usr/local/bin/autopkg repo-add recipes hjuutilainen-recipes killahquam-recipes cgerke-recipes rtrouton-recipes
-/usr/local/bin/autopkg run GoogleChrome.install Atom.install Slack.install XQuartz.install iTerm2.install
+git clone https://github.com/autopkg/autopkg.git ~/Downloads/autopkg
+cd ~/Downloads/autopkg/
+sudo /bin/sh Scripts/install.sh
+/usr/local/bin/autopkg repo-add recipes timsutton-recipes hjuutilainen-recipes killahquam-recipes cgerke-recipes rtrouton-recipes jleggat-recipes andrewvalentine-recipes scriptingosx-recipes homebysix-recipes arubdesu-recipes
+/usr/local/bin/autopkg run GoogleChrome.install Atom.install Slack.install XQuartz.install iTerm2.install MunkiAdmin.install
+cd ~
+/bin/rm -rf ~/Downloads/autopkg
 
-else
-echo "Work machine - nothing left to do"
-fi
+echo "Installing Atom packages"
+
+/usr/local/bin/apm install script
+
+echo "That's all folks"
+#else
+#echo "Work machine - nothing left to do"
+#fi
