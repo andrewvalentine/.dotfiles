@@ -56,6 +56,10 @@ sudo /bin/sh Scripts/install.sh
 cd ~
 /bin/rm -rf ~/Downloads/autopkg
 
+# Clone my repos
+git clone https://github.com/autopkg/andrewvalentine-recipes.git
+git clone https://andrewvalentine@bitbucket.org/andrewvalentine/.passpie.git
+
 echo "Installing Atom packages"
 
 /usr/local/bin/apm install script
