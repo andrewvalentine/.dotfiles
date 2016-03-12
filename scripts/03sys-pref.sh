@@ -21,7 +21,7 @@ defaults write com.apple.Bluetooth ControllerPowerState 0
 
 ## Menu bar configuration 
 # Date/time configuration
-defaults write com.apple.menuextra.clock DateFormat = "d MMM  HH:mm"
+defaults write com.apple.menuextra.clock DateFormat = "EEE d MMM  HH:mm"
 defaults write com.apple.menuextra.clock FlashDateSeparators -int 0
 defaults write com.apple.menuextra.clock IsAnalog -int 0
 # Battery meter config
