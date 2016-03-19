@@ -12,5 +12,7 @@ set hlsearch
 """""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
-colorscheme lucius
-LuciusDarkHighContrast
+"colorscheme lucius
+"LuciusDarkHighContrast
+colorscheme solarized
+set background=dark
