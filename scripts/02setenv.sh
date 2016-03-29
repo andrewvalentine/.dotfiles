@@ -8,10 +8,13 @@ brew update && brew upgrade
 
 # Install brew packages
 echo "Installing brew packages"
+
 # Install and configure git
 brew install git
-git config --global user.name "Andrew Valentine"
+git config --global user.name "andrewvalentine"
 git config --global user.email "andrew.r.valentine@gmail.com"
+
+# Install other packages via brew
 brew install python
 brew install wget
 brew install tmux
@@ -27,27 +30,25 @@ pip install --upgrade pip
 pip install csvkit
 pip install virtualenv virtualenvwrapper
 
-# Make ENV
+# Setup VirtualEnv space
 source ~/.bash_profile
 mkdir -p $WORKON_HOME
 
+# Install NODE
+brew install node
+npm install password-generator
+ln -s ~/node_modules/password-generator/bin/password-generator /usr/local/bin/password-generator
+
 # Install The Luggage
 echo "Installing The Luggage"
-
 git clone https://github.com/unixorn/luggage.git ~/Downloads/the-luggage
 cd ~/Downloads/the-luggage
 make bootstrap_files
 cd ~
 /bin/rm -rf Downloads/the-luggage
 
-# Checks if this is a personal or professional machine. If personal, sets up AutoPkg and installs software
-
-#CN=$(/bin/hostname)
-#USER=$(/bin/ls -l /dev/console | /usr/bin/awk '{ print $3 }')
-
-#if [[ $CN =~ *".bris.ac.uk"* ]]; then
-echo "Installing Autopkg!"
-
+# Install Autopkg
+echo "Installing Autopkg"
 git clone https://github.com/autopkg/autopkg.git ~/Downloads/autopkg
 cd ~/Downloads/autopkg/
 sudo /bin/sh Scripts/install.sh
@@ -60,11 +61,4 @@ cd ~
 git clone https://github.com/autopkg/andrewvalentine-recipes.git
 git clone https://andrewvalentine@bitbucket.org/andrewvalentine/.passpie.git
 
-echo "Installing Atom packages"
-
-/usr/local/bin/apm install script
-
 echo "That's all folks"
-#else
-#echo "Work machine - nothing left to do"
-#fi
