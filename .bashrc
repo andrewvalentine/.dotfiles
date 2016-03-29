@@ -12,6 +12,7 @@ alias hosts="vi ~/.ssh/known_hosts"
 alias bashe="vi ~/.bash_profile"
 alias bashrc="vi ~/.bashrc"
 alias reload="source ~/.bash_profile"
+alias dot="cd ~/.dotfiles"
 
 # system
 alias reboot="sudo /sbin/shutdown -r now"
