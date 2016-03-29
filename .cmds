@@ -36,6 +36,24 @@ sudo ipconfig set (DEVICEINTERFACE) DHCP
 #xcode license
 sudo xcrun cc
 
+#command line tools without xcode
+xcode-select --install
+
+#repair file permissions
+sudo diskutil repairPermissions /
+
+#hide folder
+chflags hidden /path/to/folder/
+
+#show hidden files
+defaults write com.apple.finder AppleShowAllFiles true
+
+#unhide user library
+chflags nohidden ~/Library
+
+#disable iCloud autosave
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
 #create bootable img
 hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/os.iso
 
@@ -68,3 +86,16 @@ brew uses --installed FORMULA
 
 #cleanup d/l'd, uninstalled brews
 brew cleanup -s
+
+#add gatekeeper exception
+spctl --add /path/to/Application.app
+spctl --remove /path/to/Application.app
+
+# Safe Mode status
+nvram boot-args
+
+# Enable safe mode
+sudo nvram boot-args="-x"
+
+# Disable safe mode
+sudo nvram boot-args=""
