@@ -48,3 +48,4 @@ export HOMEBREW_GITHUB_API_TOKEN=6a11ac9063bd70b916c49d25d78bf2f2eff65fd7
 #if ARD locks screen = ps -ax | grep AppleVNCServer
 #convert autopkg recipe to xml = plutil -convert xml1 /path/to/recipe
 #when ARD locks screen = ps -ax | grep AppleVNCServer
+#restart ARD = sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -restart -agent
