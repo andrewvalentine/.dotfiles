@@ -30,11 +30,18 @@ pip install --upgrade pip
 pip install csvkit
 pip install virtualenv virtualenvwrapper
 
+# Setup bash-git-prompt
+echo "Setting up bash-git-prompt"
+cd ~
+git clone https://github.com/magicmonty/bash-git-prompt.git .bash-git-prompt --depth=1
+
 # Setup VirtualEnv space
+echo "Setting up VirtualEnv"
 source ~/.bash_profile
 mkdir -p $WORKON_HOME
 
 # Install NODE
+echo "Installing Node"
 brew install node
 npm install password-generator
 ln -s ~/node_modules/password-generator/bin/password-generator /usr/local/bin/password-generator
