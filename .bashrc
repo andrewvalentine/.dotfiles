@@ -44,3 +44,7 @@ alias startjunos="launchctl load /Library/LaunchAgents/net.juniper.pulsetray.pli
 
 # remount ejected usb
 alias reup="sudo kextunload /System/Library/Extensions/IOUSBMassStorageDriver.kext && sudo kextload /System/Library/Extensions/IOUSBMassStorageDriver.kext"
+
+# source bash-git-prompt
+source ~/.bash-git-prompt/gitprompt.sh
+  GIT_PROMPT_ONLY_IN_REPO=1
