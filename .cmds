@@ -99,3 +99,6 @@ sudo nvram boot-args="-x"
 
 # Disable safe mode
 sudo nvram boot-args=""
+
+# Check local admins
+dscl . read /Groups/admin
