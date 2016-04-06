@@ -32,4 +32,4 @@ set background=dark
 " => Keybindings
 """""""""""""""""""""
 " Insert line break
-map b i
+map lb i
