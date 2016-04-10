@@ -102,3 +102,10 @@ sudo nvram boot-args=""
 
 # Check local admins
 dscl . read /Groups/admin
+
+# Get image pixel size
+sips -g pixelWidth /path/to/file
+sips -g pixelHeight /path/to/file
+
+# Yank/put commands in vim
+:! <ctrl+r>"
