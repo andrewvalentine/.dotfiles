@@ -11,8 +11,6 @@ echo "Installing brew packages"
 
 # Install and configure git
 brew install git
-git config --global user.name "andrewvalentine"
-git config --global user.email "andrew.r.valentine@gmail.com"
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
