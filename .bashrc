@@ -33,7 +33,7 @@ alias cf='caffeinate'
 alias pw="/usr/local/bin/password-generator"
 
 # ls
-alias ls='ls -GFh'
+alias ls='ls -Fh'
 
 # grep with color
 alias grep='grep --color=auto'
