@@ -1,93 +1,96 @@
 # A list of useful comands
 
-#system profiler via terminal
+# system profiler via terminal
 /usr/sbin/system_profiler
 
-#get serial number
+# get serial number
 system_profiler SPHardwareDataType
 
-#turn on verbose boot
+# turn on verbose boot
 sudo nvram boot-args="-v"
 
-#turn off verbose boot
+# turn off verbose boot
 sudo nvram boot-args=
 
-#unload junos pulse
+# unload junos pulse
 launchctl unload -w /Library/LaunchAgents/net.juniper.pulsetray.plist
 
-#load junos pulse
+# load junos pulse
 launchctl load -w /Library/LaunchAgents/net.juniper.pulsetray.plist
 
-#lock screen
+# lock screen
 /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
 
-#show encrypted storage volumes
+# show encrypted storage volumes
 diskutil corestorage list
 
-#unlock encrypted disk
+# unlock encrypted disk
 diskutil corestorage unlockVolume UUID -stdinpassphrase
 
-#sleep from terminal
+# sleep from terminal
 pmset sleepnow
 
-#release/renew DHCP
+# release/renew DHCP
 sudo ipconfig set (DEVICEINTERFACE) DHCP
 
-#xcode license
+# xcode license
 sudo xcrun cc
 
-#command line tools without xcode
+# command line tools without xcode
 xcode-select --install
 
-#repair file permissions
+# repair file permissions
 sudo diskutil repairPermissions /
 
-#hide folder
+# hide folder
 chflags hidden /path/to/folder/
 
-#show hidden files
+# show hidden files
 defaults write com.apple.finder AppleShowAllFiles true
 
-#unhide user library
+# unhide user library
 chflags nohidden ~/Library
 
-#disable iCloud autosave
+# disable iCloud autosave
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
-#create bootable img
+# create bootable img
 hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/os.iso
 
-#create bootable disk
+# create bootable disk
 sudo dd if=/path/to/downloaded.img of=/dev/rdiskN bs=1m
 
-#if ARD locks screen
+# if ARD locks screen
 ps -ax | grep AppleVNCServer
 
-#convert autopkg recipe to "proper" xml
+# convert autopkg recipe to "proper" xml
 plutil -convert xml1 /path/to/recipe
 
-#when ARD locks screen
+# when ARD locks screen
 ps -ax | grep AppleVNCServer
 
-#get 10 largests dirs
+# get 10 largests dirs
 du -a /var | sort -n -r | head -n 10
 
-#get attached USB devices
+# get attached USB devices
 system_profiler SPUSBDataType
 
-#remount ejected usb drive
+# remount ejected usb drive
 sudo kextunload /System/Library/Extensions/IOUSBMassStorageDriver.kext && sudo kextload /System/Library/Extensions/IOUSBMassStorageDriver.kext
 
-#check brew dependencies
+# list dependencies for given brew
+brew deps $brew
+
+# check brew dependencies
 brew deps --installed --tree
 
-#check what brews use a given formula
-brew uses --installed FORMULA
+# what brew use this brew
+brew uses --installed $brew
 
-#cleanup d/l'd, uninstalled brews
+# cleanup d/l'd, uninstalled brews
 brew cleanup -s
 
-#add gatekeeper exception
+# add gatekeeper exception
 spctl --add /path/to/Application.app
 spctl --remove /path/to/Application.app
 
