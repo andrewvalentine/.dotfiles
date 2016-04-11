@@ -4,7 +4,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # Modify path
-export PATH="/usr/local/git/bin:/usr/local/sbin:~/mac-tools:$PATH"
+export PATH="/usr/local/git/bin:/usr/local/sbin:$PATH"
 
 # Modify prompt
 export PS1="\[\033[0;33m\][\u@\h \w]\\$\[\033[0m\] "
