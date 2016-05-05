@@ -112,3 +112,6 @@ sips -g pixelHeight /path/to/file
 
 # Yank/put commands in vim
 :! <ctrl+r>"
+
+# Add printer from terminal
+lpadmin -p "NAME" -E -v "URL" -P "PPD" -D "DESCRIPTION" -o printer-is-shared=false
