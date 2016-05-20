@@ -115,3 +115,6 @@ sips -g pixelHeight /path/to/file
 
 # Add printer from terminal
 lpadmin -p "NAME" -E -v "URL" -P "PPD" -D "DESCRIPTION" -o printer-is-shared=false
+
+# Generate random password
+openssl rand -base64 6
