@@ -118,3 +118,10 @@ lpadmin -p "NAME" -E -v "URL" -P "PPD" -D "DESCRIPTION" -o printer-is-shared=fal
 
 # Generate random password
 openssl rand -base64 6
+
+# Install setuptools/pip/virtualenv
+wget https://bootstrap.pypa.io/ez_setup.py
+python ez_setup.py --user
+wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py --user
+pip install –user virtualenv
