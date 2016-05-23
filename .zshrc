@@ -12,7 +12,7 @@ ZSH_THEME="pygmalion"
 HIST_STAMPS="dd.mm.yyyy"
 
 # Plugins
-plugins=(git colored-man colorize osx)
+plugins=(git brews pip web-search vi-mode colored-man colorize osx)
 
 # Zsh git prompt
 source $HOME/.zsh-git-prompt/zshrc.sh
@@ -46,6 +46,9 @@ fi
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# powerline
+. /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 #---------
 # ALIASES
