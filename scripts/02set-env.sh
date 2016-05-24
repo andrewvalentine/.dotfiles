@@ -26,6 +26,8 @@ brew install ssh-copy-id
 brew install passpie
 brew install mas
 brew install ranger
+brew install peco
+brew install macvim --env-std --with-override-system-vim
 brew tap caskroom/cask
 
 # Install pip packages
