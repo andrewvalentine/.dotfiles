@@ -125,3 +125,6 @@ python ez_setup.py --user
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py --user
 pip install –user virtualenv
+
+# Check hash of Munki .dmg
+shasum -a 256 /path/to/dmg
