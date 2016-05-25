@@ -47,9 +47,6 @@ fi
 # ssh
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# powerline
-. /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
-
 #---------
 # ALIASES
 #---------
