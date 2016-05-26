@@ -6,19 +6,30 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Theme
-ZSH_THEME="pygmalion"
+ZSH_THEME=""
+#ZSH_THEME="robbyrussell"
+#ZSH_THEME="pygmalion"
+ZSH_THEME="norm"
+#ZSH_THEME="blinks"
 
 # History format
 HIST_STAMPS="dd.mm.yyyy"
 
 # Plugins
-plugins=(git brews pip web-search vi-mode colored-man colorize osx)
-
-# Zsh git prompt
-source $HOME/.zsh-git-prompt/zshrc.sh
-PROMPT='%B%m%~%b$(git_super_status) %# '
+plugins=(colored-man-pages git brews pip web-search vi-mode osx colorize)
 
 source $ZSH/oh-my-zsh.sh
+
+#-----------
+# SHORTCUTS
+#-----------
+
+bindkey "^a" beginning-of-line
+bindkey "^e" end-of-line
+bindkey "^f" forward-word
+bindkey "^b" backward-word
+#bindkey "[G" backward-kill-word
+#bindkey "[H" kill-word
 
 #-------------
 # USER CONFIG
@@ -68,7 +79,7 @@ alias cfg="vi ~/.ssh/config"
 alias hosts="vi ~/.ssh/known_hosts"
 alias bashe="vi ~/.bash_profile"
 alias bashrc="vi ~/.bashrc"
-alias reload="source ~/.bash_profile"
+alias reload="source ~/.zshrc"
 alias dot="cd ~/.dotfiles"
 
 # system
