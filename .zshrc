@@ -5,8 +5,11 @@
 # Path to oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# Set custom dir
+export ZSH_CUSTOM=$HOME/.dotfiles/zsh_custom
+
 # Theme
-ZSH_THEME=""
+#ZSH_THEME=""
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="pygmalion"
 ZSH_THEME="norm"
@@ -16,7 +19,7 @@ ZSH_THEME="norm"
 HIST_STAMPS="dd.mm.yyyy"
 
 # Plugins
-plugins=(colored-man-pages git brews pip web-search vi-mode osx colorize)
+plugins=(colored-man-pages cp web-search colorize pkgsrc munki)
 
 source $ZSH/oh-my-zsh.sh
 
