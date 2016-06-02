@@ -66,9 +66,6 @@ ps -ax | grep AppleVNCServer
 # convert autopkg recipe to "proper" xml
 plutil -convert xml1 /path/to/recipe
 
-# when ARD locks screen
-ps -ax | grep AppleVNCServer
-
 # get 10 largests dirs
 du -a /var | sort -n -r | head -n 10
 
@@ -128,3 +125,9 @@ pip install –user virtualenv
 
 # Check hash of Munki .dmg
 shasum -a 256 /path/to/dmg
+
+# Restart ARD
+sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -restart -agent
+
+# Read property from .plist
+/usr/libexec/PlistBuddy  -c "print :CFBundleVersion" /Applications/$APP.app/Contents/Info.plist
