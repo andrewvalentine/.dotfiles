@@ -15,3 +15,6 @@ alias msulog="tail -f /Library/Managed\ Installs/Logs/ManagedSoftwareUpdate.log"
 
 # Preferences
 alias msup="defaults read /Library/Preferences/ManagedInstalls"
+
+# MSC
+alias msc="open /Applications/Managed\ Software\ Center.app"
