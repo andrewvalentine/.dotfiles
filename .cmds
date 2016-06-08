@@ -128,6 +128,12 @@ shasum -a 256 /path/to/dmg
 
 # Restart ARD
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -restart -agent
+# Start ARD with access rights for admins
+sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -users admin -privs -all -restart -agent -menu
 
 # Read property from .plist
 /usr/libexec/PlistBuddy  -c "print :CFBundleVersion" /Applications/$APP.app/Contents/Info.plist
+
+# Add quarantine attribute
+xattr -p (-r) com.apple.quarantine file > file.xattr
+xattr -w (-r) com.apple.quarantine "`cat file.xattr`" path/to/file/or/app
