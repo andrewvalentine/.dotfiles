@@ -133,3 +133,7 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 
 # Read property from .plist
 /usr/libexec/PlistBuddy  -c "print :CFBundleVersion" /Applications/$APP.app/Contents/Info.plist
+
+# Add quarantine attribute
+xattr -p (-r) com.apple.quarantine file > file.xattr
+xattr -w (-r) com.apple.quarantine "`cat file.xattr`" path/to/file/or/app
