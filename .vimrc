@@ -62,5 +62,8 @@ set background=dark
 """""""""""""""""""""
 " => Keybindings
 """""""""""""""""""""
-" Insert line break
+" Insert line break [lb]
 map lb i
+
+" Run as Python script [Ctrl+P]
+map <C-p> :w<CR>:!python %<CR>
