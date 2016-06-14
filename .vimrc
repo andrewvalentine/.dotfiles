@@ -67,3 +67,28 @@ map lb i
 
 " Run as Python script [Ctrl+P]
 map <C-p> :w<CR>:!python %<CR>
+
+""""""""""""""
+" => NERDTree
+""""""""""""""
+" Start NERDTree automatically when opening Vim without file
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" Toggle NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+" Show bookmarks
+let NERDTreeShowBookmarks=1
+
+" Show hidden files
+let NERDTreeShowHidden=1
+
+" Disable rope
+let g:pymode_rope_lookup_project = 0
+
+" Minimal UI
+let NERDTreeMinimalUI = 1
+
+" Dir arrows
+let NERDTreeMinimalUI = 1
