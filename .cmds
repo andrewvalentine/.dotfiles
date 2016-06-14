@@ -137,3 +137,11 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 # Add quarantine attribute
 xattr -p (-r) com.apple.quarantine file > file.xattr
 xattr -w (-r) com.apple.quarantine "`cat file.xattr`" path/to/file/or/app
+
+# Get DFS referral
+smbutil dfs smb://path/to/share
+
+# Use SMB1 stack
+echo "[default]" >> ~/Library/Preferences/nsmb.conf; echo "smb_neg=smb1_only" >> ~/Library/Preferences/nsmb.conf
+# Reset to SMB2 stack
+rm ~/Library/Preferences/nsmb.conf
