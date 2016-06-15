@@ -2,7 +2,7 @@
 # ZSH CONFIG
 #------------
 
-# Path to oh-my-zsh installation.
+# Path to oh-my-zsh installation
 export ZSH=$HOME/.oh-my-zsh
 
 # Set custom dir
@@ -19,7 +19,7 @@ ZSH_THEME="norm"
 HIST_STAMPS="dd.mm.yyyy"
 
 # Plugins
-plugins=(colored-man-pages cp web-search colorize pkgsrc munki)
+plugins=(git colored-man-pages cp web-search colorize pkgsrc munki)
 
 source $ZSH/oh-my-zsh.sh
 
