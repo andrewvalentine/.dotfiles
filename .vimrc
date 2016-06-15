@@ -21,6 +21,8 @@ Plugin 'klen/python-mode'
 
 Plugin 'vim-airline/vim-airline'
 
+Plugin 'vim-airline/vim-airline-themes'
+
 Plugin 'airblade/vim-gitgutter'
 
 Plugin 'scrooloose/syntastic'
@@ -55,6 +57,7 @@ set showmode
 """""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
+
 " Set colorscheme
 colorscheme solarized
 set background=dark
@@ -67,6 +70,12 @@ map lb i
 
 " Run as Python script [Ctrl+P]
 map <C-p> :w<CR>:!python %<CR>
+
+" Manage splits
+nnoremap <C-J> <C-W><C-J> "Ctrl-j to move down a split  
+nnoremap <C-K> <C-W><C-K> "Ctrl-k to move up a split  
+nnoremap <C-L> <C-W><C-L> "Ctrl-l to move right a split  
+nnoremap <C-H> <C-W><C-H> "Ctrl-h to move left a split
 
 """"""""""""""
 " => NERDTree
