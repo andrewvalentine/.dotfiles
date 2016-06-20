@@ -9,17 +9,13 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM=$HOME/.dotfiles/zsh_custom
 
 # Theme
-#ZSH_THEME=""
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="pygmalion"
 ZSH_THEME="norm"
-#ZSH_THEME="blinks"
 
 # History format
 HIST_STAMPS="dd.mm.yyyy"
 
 # Plugins
-plugins=(git colored-man-pages cp web-search colorize pkgsrc munki)
+plugins=(git colored-man-pages cp web-search colorize pkgsrc munki osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,6 +80,7 @@ alias bashe="vi ~/.bash_profile"
 alias bashrc="vi ~/.bashrc"
 alias reload="source ~/.zshrc"
 alias dot="cd ~/.dotfiles"
+alias vrc="vim ~/.vimrc"
 
 # system
 alias reboot="sudo /sbin/shutdown -r now"
