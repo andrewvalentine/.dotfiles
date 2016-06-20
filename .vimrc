@@ -78,6 +78,13 @@ nnoremap <C-K> <C-W><C-K> "Ctrl-k to move up a split
 nnoremap <C-L> <C-W><C-L> "Ctrl-l to move right a split  
 nnoremap <C-H> <C-W><C-H> "Ctrl-h to move left a split
 
+" Edit files in current directory
+cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
+map <leader>ew :e %%
+map <leader>es :sp %%
+map <leader>ev :vsp %%
+map <leader>et :tabe %%
+
 """"""""""
 " NERDTree
 """"""""""
@@ -92,3 +99,11 @@ let g:pymode_rope_lookup_project = 0 " Disable rope
 let NERDTreeMinimalUI = 1 " Minimal UI
 
 let NERDTreeMinimalUI = 1 " Dir arrows
+
+""""""""
+" .vimrc
+""""""""
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+  endif
