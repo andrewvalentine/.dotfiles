@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Make sure we're in $HOME
+cd $HOME
+
 # Install Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git  ~/.vim/bundle/Vundle.vim
 
@@ -30,6 +33,9 @@ brew install passpie
 brew install mas
 brew install ranger
 brew install peco
+brew install sf-pwgen
+brew install zsh
+brew install zsh-syntax-highlighting
 brew install macvim --env-std --with-override-system-vim
 brew tap caskroom/cask
 
@@ -39,23 +45,12 @@ pip install --upgrade pip
 pip install csvkit
 pip install virtualenv virtualenvwrapper
 pip install gitsome
-
-# Commenting out while I mess around with Oh-my-Zsh
-# Setup bash-git-prompt
-#echo "Setting up bash-git-prompt"
-#cd ~
-#git clone https://github.com/magicmonty/bash-git-prompt.git .bash-git-prompt --depth=1
+pip install ipython
 
 # Setup VirtualEnv space
 echo "Setting up VirtualEnv"
 source ~/.bash_profile
 mkdir -p $WORKON_HOME
-
-# Install NODE
-echo "Installing Node"
-brew install node
-npm install password-generator
-ln -s ~/node_modules/password-generator/bin/password-generator /usr/local/bin/password-generator
 
 # Install The Luggage
 echo "Installing The Luggage"
@@ -71,7 +66,7 @@ git clone https://github.com/autopkg/autopkg.git ~/Downloads/autopkg
 cd ~/Downloads/autopkg/
 sudo /bin/sh Scripts/install.sh
 /usr/local/bin/autopkg repo-add recipes timsutton-recipes hjuutilainen-recipes killahquam-recipes cgerke-recipes rtrouton-recipes jleggat-recipes andrewvalentine-recipes scriptingosx-recipes homebysix-recipes arubdesu-recipes eholtham-recipes triti-recipes jaharmi-recipes
-/usr/local/bin/autopkg run GoogleChrome.install Atom.install Slack.install XQuartz.install iTerm2.install MunkiAdmin.install SuspiciousPackageApp.install DeployStudioAdmin.install
+/usr/local/bin/autopkg run GoogleChrome.install Slack.install XQuartz.install iTerm2.install MunkiAdmin.install SuspiciousPackageApp.install DeployStudioAdmin.install
 cd ~
 /bin/rm -rf ~/Downloads/autopkg
 
