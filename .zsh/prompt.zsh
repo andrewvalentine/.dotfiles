@@ -25,5 +25,5 @@ function git_prompt_info {
 
 #PROMPT='%~%<< $(git_prompt_info)${PR_BOLD_WHITE}>%{${reset_color}%} '
 #PROMPT="%{$fg[yellow]%}[%n@%m] %{$fg[red]%}%1/ %{$reset_color%}> "
-PROMPT="%{$fg[yellow]%}[%n@%m] %{$fg_bold[blue]%}%1/ %{$reset_color%}> "
+PROMPT="%{$fg[yellow]%}[%n@%m] %{$fg_bold[blue]%}%1~ %{$reset_color%}> "
 RPROMPT="[%{$fg_no_bold[blue]%}%w%{$reset_color%}]"

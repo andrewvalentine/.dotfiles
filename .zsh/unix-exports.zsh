@@ -21,22 +21,3 @@ fi
 
 # SSH
 export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-case `uname` in
-	Darwin)
-
-# Add sbin to path
-export PATH=$PATH:/usr/local/sbin
-
-# Virtualenv settings
-export WORKON_HOME=~/Envs
-source /usr/local/bin/virtualenvwrapper.sh
-
-;;
-
-	Linux)
-
-# Add .local to path
-export PATH=$PATH:~/.local/bin
-
-esac

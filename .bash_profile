@@ -1,3 +1,6 @@
+case `uname` in
+	Darwin)
+
 # Source ~/.bashrc
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
@@ -26,3 +29,10 @@ export HOMEBREW_GITHUB_API_TOKEN=6a11ac9063bd70b916c49d25d78bf2f2eff65fd7
 
 # Brew editor
 export HOMEBREW_EDITOR=/usr/bin/vim
+;;
+	Linux)
+
+export SHELL=/usr/bin/zsh
+exec /usr/bin/zsh -l
+;;
+esac

@@ -57,6 +57,8 @@ set showmatch " Show matching parentheses
 
 set showmode " Show edit mode
 
+set number " Show line numbers
+
 """"""""""""""""""
 " Colors and Fonts
 """"""""""""""""""

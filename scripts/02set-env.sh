@@ -6,6 +6,9 @@ cd $HOME
 # Install Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git  ~/.vim/bundle/Vundle.vim
 
+case `uname` in
+	Darwin)
+
 # Install brew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -74,4 +77,17 @@ cd ~
 git clone https://github.com/autopkg/andrewvalentine-recipes.git
 git clone https://andrewvalentine@bitbucket.org/andrewvalentine/.passpie.git
 
+# Set shell to brew zsh
+sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+;;
+	Linux)
+
+# Install pip
+echo "Installing pip"
+wget https://bootstrap.pypa.io/get-pip.py
+/usr/local/bin/python get-pip.py --user
+# Setup zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.local/zsh-syntax-highlighting
+;;
+esac
 echo "That's all folks"
