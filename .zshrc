@@ -17,8 +17,8 @@ source ~/.zsh/zsh_hooks.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ;;
 	Linux)
-source ~/.zsh/prompt.zsh
 source ~/.zsh/colors.zsh
+source ~/.zsh/prompt.zsh
 source ~/.zsh/unix-aliases.zsh
 source ~/.zsh/unix-exports.zsh
 source ~/.local/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
