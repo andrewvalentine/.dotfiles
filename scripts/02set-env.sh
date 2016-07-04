@@ -84,7 +84,7 @@ sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 # Install pip
 echo "Installing pip"
 wget https://bootstrap.pypa.io/get-pip.py
-/usr/local/bin/python get-pip.py --user
+python get-pip.py --user
 # Setup zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.local/zsh-syntax-highlighting
 ;;
