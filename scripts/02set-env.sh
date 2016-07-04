@@ -34,7 +34,6 @@ brew install osxutils
 brew install ssh-copy-id
 brew install passpie
 brew install mas
-brew install ranger
 brew install peco
 brew install sf-pwgen
 brew install zsh
