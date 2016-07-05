@@ -145,3 +145,9 @@ smbutil dfs smb://path/to/share
 echo "[default]" >> ~/Library/Preferences/nsmb.conf; echo "smb_neg=smb1_only" >> ~/Library/Preferences/nsmb.conf
 # Reset to SMB2 stack
 rm ~/Library/Preferences/nsmb.conf
+
+# Check user group membership
+dscl . search /Groups GroupMembership $USER
+
+# Set volume to 0
+sudo osascript -e "set Volume 0"
