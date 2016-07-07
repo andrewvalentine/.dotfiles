@@ -75,6 +75,7 @@ cd ~
 # Clone my repos
 git clone https://github.com/autopkg/andrewvalentine-recipes.git
 git clone git@bitbucket.org:andrewvalentine/.passpie.git
+git clone git clone git@bitbucket.org:andrewvalentine/.todolist.git
 
 # Set shell to brew zsh
 sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
