@@ -151,3 +151,9 @@ dscl . search /Groups GroupMembership $USER
 
 # Set volume to 0
 sudo osascript -e "set Volume 0"
+
+# Get board ID
+ioreg -l | awk -F\" '/board-id/ { print $4 }'
+
+# Get Macbook model
+system_profiler SPHardwareDataType | grep "Model Identifier"
