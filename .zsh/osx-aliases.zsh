@@ -87,3 +87,12 @@ alias pkc="sudo pkgin clean"
 alias pupu="sudo pkgin update && sudo pkgin upgrade"
 alias parc="sudo pkgin autoremove && sudo pkgin clean"
 alias puke="pupu && parc"
+
+#-----------------
+# Todolist aliases
+#-----------------
+alias tdl="todolist list"
+alias tda="todolist a"
+alias tdlt="todolist l due tod"
+alias tdlm="todolist l due tom"
+alias tdc="todolist c"
