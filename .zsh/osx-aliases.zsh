@@ -26,7 +26,7 @@ alias reboot="sudo /sbin/shutdown -r now"
 alias shutdown="sudo /sbin/shutdown -h now"
 alias wol='wakeonlan -f ~/.wakeonlan/avsrv.wol'
 alias updatedb="sudo /usr/libexec/locate.updatedb"
-alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say cache flushed'
+alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
 alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 
 # list top ten files/dirs
@@ -87,3 +87,12 @@ alias pkc="sudo pkgin clean"
 alias pupu="sudo pkgin update && sudo pkgin upgrade"
 alias parc="sudo pkgin autoremove && sudo pkgin clean"
 alias puke="pupu && parc"
+
+#-----------------
+# Todolist aliases
+#-----------------
+alias tdl="todolist list"
+alias tda="todolist a"
+alias tdlt="todolist l due tod"
+alias tdlm="todolist l due tom"
+alias tdc="todolist c"
