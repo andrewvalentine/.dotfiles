@@ -79,6 +79,10 @@ git clone git clone git@bitbucket.org:andrewvalentine/.todolist.git
 
 # Set shell to brew zsh
 sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+
+# Clone zsh-git-prompt
+git clone https://github.com/olivierverdier/zsh-git-prompt.git ~/.zsh/zsh-git-prompt
+
 ;;
 	Linux)
 
@@ -86,8 +90,12 @@ sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 echo "Installing pip"
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py --user
+
 # Setup zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.local/zsh-syntax-highlighting
+
+# Set zsh-git-prompt
+git clone https://github.com/olivierverdier/zsh-git-prompt.git ~/.zsh/zsh-git-prompt
 ;;
 esac
 echo "That's all folks"
