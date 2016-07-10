@@ -1,7 +1,7 @@
 # listing
-alias ll='ls -aGFhl'
-alias ls='ls -GFh'
-alias l='ls -GFh' 
+alias ll='ls -aFhl'
+alias ls='ls -Fh'
+alias l='ls -Fh' 
 
 # config env
 alias ze="vim ~/.zshrc"
