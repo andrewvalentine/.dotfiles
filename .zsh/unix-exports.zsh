@@ -1,3 +1,6 @@
+# PATH
+export PATH=$PATH:~/.local/bin
+
 # Setup terminal, and turn on colors
 export TERM=xterm-256color
 export CLICOLOR=1
