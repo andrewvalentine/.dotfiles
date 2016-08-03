@@ -1,6 +1,9 @@
 [alias]
 	dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy | less --tabs=4 -RFX; }; f"
-	gst = git status
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [user]
