@@ -1,5 +1,5 @@
 # PATH
-export PATH=$PATH:~/.local/bin
+export PATH=$HOME/.local/bin:$PATH
 
 # Setup terminal, and turn on colors
 export TERM=xterm-256color
