@@ -32,7 +32,14 @@ export HOMEBREW_EDITOR=/usr/bin/vim
 ;;
 	Linux)
 
-export SHELL=/usr/bin/zsh
-exec /usr/bin/zsh -l
+ZSH="$(which zsh)"
+BASH="$(which bash)"
+
+if [ -a "${ZSH}" ]; then
+	export SHELL="${ZSH}"
+	exec "${ZSH}" -l
+else
+	export SHELL="${BASH}"
+	exec "${BASH}" -l
 ;;
 esac
