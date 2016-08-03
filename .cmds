@@ -157,3 +157,6 @@ ioreg -l | awk -F\" '/board-id/ { print $4 }'
 
 # Get Macbook model
 system_profiler SPHardwareDataType | grep "Model Identifier"
+
+# Hash a given password
+openssl passwd -1 -salt xyz $password
