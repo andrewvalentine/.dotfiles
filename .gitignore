@@ -1,4 +1,5 @@
 .DS_Store
 .ssh/
 .vim/.netrwhist
+.vim/bundle
 .zsh/zsh-git-prompt
