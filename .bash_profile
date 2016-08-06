@@ -41,5 +41,6 @@ if [ -a "${ZSH}" ]; then
 else
 	export SHELL="${BASH}"
 	exec "${BASH}" -l
+fi
 ;;
 esac
