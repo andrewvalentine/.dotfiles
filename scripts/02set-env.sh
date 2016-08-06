@@ -39,6 +39,7 @@ brew install sf-pwgen
 brew install zsh
 brew install zsh-syntax-highlighting
 brew install macvim --env-std --with-override-system-vim
+brew install diff-so-fancy
 brew tap caskroom/cask
 
 # Install pip packages
