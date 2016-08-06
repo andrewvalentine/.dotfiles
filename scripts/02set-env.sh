@@ -97,6 +97,18 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.local/zsh-
 
 # Set zsh-git-prompt
 git clone https://github.com/olivierverdier/zsh-git-prompt.git ~/.zsh/zsh-git-prompt
+
+# Setup diff-so-fancy
+curl https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/diff-so-fancy --output ~/.local/bin/diff-so-fancy
+curl https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/third_party/diff-highlight/diff-highlight --output ~/.local/bin/diff-highlight
+curl https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/lib/diff-so-fancy.pl --output ~/.local/bin/lib/diff-so-fancy.pl --create-dirs
+
+chmod +x ~/.local/bin/diff-so-fancy
+chmod +x ~/.local/bin/diff-highlight
+chmod +x ~/.local/bin/lib/diff-so-fancy.pl
+
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+
 ;;
 esac
 echo "That's all folks"
