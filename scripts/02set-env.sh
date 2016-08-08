@@ -84,6 +84,12 @@ sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 # Clone zsh-git-prompt
 git clone https://github.com/olivierverdier/zsh-git-prompt.git ~/.zsh/zsh-git-prompt
 
+# Setup diff-so-fancy
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+
+git config --local user.name "Andrew Valentine"
+git config --local user.email andrew.r.valentine@gmail.com
+
 ;;
 	Linux)
 
