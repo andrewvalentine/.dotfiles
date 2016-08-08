@@ -11,6 +11,7 @@ ln -sf $HOME/.dotfiles/.zsh $HOME/
 
 case `uname` in
 	Darwin)
-ln -sf /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/sbin/airport
+sudo mkdir -p /usr/local/sbin
+ln -sf /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/sbin/
 ;;
 esac
