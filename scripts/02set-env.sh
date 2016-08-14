@@ -44,7 +44,7 @@ brew tap caskroom/cask
 
 # Install pip packages
 echo "Installing pip packages"
-pip install --upgrade pip
+pip install --upgrade pip setuptools
 pip install csvkit
 pip install virtualenv virtualenvwrapper
 pip install gitsome
