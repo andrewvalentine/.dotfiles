@@ -27,4 +27,5 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Virtualenv settings
 export WORKON_HOME=~/Envs
+export VIRTUALENV_PYTHON=`which python`
 source /usr/local/bin/virtualenvwrapper.sh
