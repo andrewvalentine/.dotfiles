@@ -163,3 +163,7 @@ system_profiler SPHardwareDataType | grep "Model Identifier"
 
 # Hash a given password
 openssl passwd -1 -salt xyz $password
+
+# If you get this error:
+# xterm-256color: Unknown terminal type
+export TERM=xterm
