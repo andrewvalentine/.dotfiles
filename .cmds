@@ -167,3 +167,6 @@ openssl passwd -1 -salt xyz $password
 # If you get this error:
 # xterm-256color: Unknown terminal type
 export TERM=xterm
+
+# SSH tunnel
+ssh -L 5901:host.domain:5900 user@server.domain
