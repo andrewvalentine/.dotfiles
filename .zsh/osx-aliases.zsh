@@ -38,6 +38,7 @@ alias edit="open -a TextWrangler.app $1"
 alias bubu='brew update && brew upgrade'
 alias cf='caffeinate'
 alias pw='/usr/local/bin/sf-pwgen'
+alias afw='sudo /usr/libexec/ApplicationFirewall/socketfilterfw'
 
 # grep with color
 alias grep='grep --color=auto'
