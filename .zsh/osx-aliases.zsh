@@ -28,6 +28,7 @@ alias wol='wakeonlan -f ~/.wakeonlan/avsrv.wol'
 alias updatedb="sudo /usr/libexec/locate.updatedb"
 alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
 alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+alias kickstart='sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart'
 
 # list top ten files/dirs
 alias ducks='du -cks * | sort -rn | head'
