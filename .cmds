@@ -173,3 +173,6 @@ ssh -L 5901:host.domain:5900 user@server.domain
 
 # Check cert expiry date
 echo q | openssl s_client -connect host:port | openssl x509 -noout -enddate
+
+# Check binary entitlements
+codesign -d --entitlements - /path/to/binary
