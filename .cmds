@@ -102,6 +102,8 @@ sudo nvram boot-args=""
 
 # Check local admins
 dscl . read /Groups/admin
+OR
+dsmemberutil checkmembership -U username -G admin
 
 # Get image pixel size
 sips -g pixelWidth /path/to/file
