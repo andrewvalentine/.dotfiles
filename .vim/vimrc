@@ -64,8 +64,8 @@ set number " Show line numbers
 """"""""""""""""""
 syntax enable " Syntax highlighting
 
-colorscheme solarized " Set colourscheme
-set background=dark " Set colourscheme
+colorscheme flattened_dark " Set colourscheme
+""set background=dark " Set colourscheme
 
 """""""""""""
 " Keybindings
