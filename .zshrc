@@ -45,3 +45,5 @@ precmd() {
     tmux setenv "$(tmux display -p 'TMUX_PWD_#D')" "$PWD"
   fi
 }
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
