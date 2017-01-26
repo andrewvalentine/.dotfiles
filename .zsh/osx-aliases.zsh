@@ -4,7 +4,7 @@ alias ls='ls -GFh'
 alias l='ls -GFh' 
 
 # navigation
-alias music='cd /Users/andrew/Music/iTunes/iTunes\ Media/Music/'
+alias music='cd /Users/andrew/Music'
 alias mky="cd /Volumes/munki_repo"
 alias override="cd ~/Library/AutoPkg/RecipeOverrides/"
 
@@ -24,7 +24,7 @@ alias vrc="vim ~/.vimrc"
 # system
 alias reboot="sudo /sbin/shutdown -r now"
 alias shutdown="sudo /sbin/shutdown -h now"
-alias wol='wakeonlan -f ~/.wakeonlan/avsrv.wol'
+alias wol='wakeonlan -f ~/.wakeonlan/avnas.wol'
 alias updatedb="sudo /usr/libexec/locate.updatedb"
 alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
 alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
