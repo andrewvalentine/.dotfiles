@@ -2,5 +2,6 @@
 .ssh/
 .vim/.netrwhist
 .vim/bundle
+.vim/plugged
 .zsh/zsh-git-prompt
 .zsh/cache
