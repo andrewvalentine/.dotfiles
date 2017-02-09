@@ -25,6 +25,8 @@ Plug 'junegunn/vim-github-dashboard'
 
 Plug 'junegunn/goyo.vim'
 
+Plug 'JamshedVesuna/vim-markdown-preview'
+
 " Initialize plugin system
 call plug#end()
 
