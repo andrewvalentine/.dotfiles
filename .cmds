@@ -180,3 +180,6 @@ echo q | openssl s_client -connect host:port | openssl x509 -noout -enddate
 
 # Check binary entitlements
 codesign -d --entitlements - /path/to/binary
+
+# Verify signature of .app
+codesign --display -r- --deep -v /path/to/.appBundle
