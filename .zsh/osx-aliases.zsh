@@ -19,7 +19,7 @@ alias bashe="vim ~/.bash_profile"
 alias bashrc="vim ~/.bashrc"
 alias reload="source ~/.zshrc"
 alias dot="cd ~/.dotfiles"
-alias vrc="vim ~/.vimrc"
+alias vrc="vim ~/.vim/vimrc"
 
 # system
 alias reboot="sudo /sbin/shutdown -r now"
