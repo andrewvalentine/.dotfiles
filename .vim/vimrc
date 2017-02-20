@@ -19,7 +19,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'airblade/vim-gitgutter'
 
-Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
 
 Plug 'junegunn/vim-github-dashboard'
 
@@ -28,6 +28,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'mattn/gist-vim'
 
 Plug 'JamshedVesuna/vim-markdown-preview'
+
+Plug 'Valloric/YouCompleteMe'
 
 " Initialize plugin system
 call plug#end()
