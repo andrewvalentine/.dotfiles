@@ -1,5 +1,5 @@
 # PATH
-export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/sbin:$HOME/.gems/bin
 
 # Setup terminal, and turn on colors
 export TERM=xterm-256color
@@ -24,6 +24,9 @@ fi
 
 # SSH
 export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# Gem
+export GEM_HOME=$HOME/.gems
 
 # Virtualenv settings
 export WORKON_HOME=~/Envs
