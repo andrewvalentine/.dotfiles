@@ -29,7 +29,7 @@ Plug 'mattn/gist-vim'
 
 Plug 'JamshedVesuna/vim-markdown-preview'
 
-Plug 'Valloric/YouCompleteMe'
+Plug 'darfink/vim-plist'
 
 " Initialize plugin system
 call plug#end()
