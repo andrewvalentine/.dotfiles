@@ -183,3 +183,9 @@ codesign -d --entitlements - /path/to/binary
 
 # Verify signature of .app
 codesign --display -r- --deep -v /path/to/.appBundle
+
+# Find valid codesigning identities
+security find-identity -v
+
+# Sign a profile
+security cms -S -N "Developer ID Installer" -i /path/to/your.mobileconfig -o /path/to/your/signed/output.mobileconfig
