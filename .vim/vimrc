@@ -61,13 +61,14 @@ set showmode " Show edit mode
 
 set number " Show line numbers
 
+set backspace=2 " Normalise backspace in iTerm2
+
 """"""""""""""""""
 " Colors and Fonts
 """"""""""""""""""
 syntax enable " Syntax highlighting
 
 colorscheme zenburn " Set colourscheme
-""set background=dark " Set colourscheme
 
 """""""""""""
 " Keybindings
@@ -88,21 +89,6 @@ map <leader>ew :e %%
 map <leader>es :sp %%
 map <leader>ev :vsp %%
 map <leader>et :tabe %%
-
-""""""""""
-" NERDTree
-""""""""""
-map <C-n> :NERDTreeToggle<CR> " Toggle NERDTree [Ctrl+n]
-
-let NERDTreeShowBookmarks=1 " Show bookmarks
-
-let NERDTreeShowHidden=1 " Show hidden files 
-
-let g:pymode_rope_lookup_project = 0 " Disable rope
-
-let NERDTreeMinimalUI = 1 " Minimal UI
-
-let NERDTreeMinimalUI = 1 " Dir arrows
 
 """"""""
 " .vimrc
