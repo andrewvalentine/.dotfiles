@@ -11,8 +11,6 @@ call plug#begin('~/.vim/plugged')
 
 " Plugins
 
-Plug 'klen/python-mode'
-
 Plug 'vim-airline/vim-airline'
 
 Plug 'vim-airline/vim-airline-themes'
