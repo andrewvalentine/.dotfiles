@@ -61,4 +61,4 @@ fi
 
 CFPreferencesAppSynchronize "com.apple.finder"
 
-echo "Some changes need a restart..."
+echo "Finished - some changes need a restart..."
