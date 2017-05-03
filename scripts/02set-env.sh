@@ -5,7 +5,7 @@ cd $HOME
 
 # Install VimPlug
 echo "Installing VimPlug..."
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 case `uname` in
 	Darwin)
@@ -52,7 +52,7 @@ pip install ipython
 
 # Setup VirtualEnv space
 echo "Setting up VirtualEnv..."
-source ~/.bash_profile
+source $HOME/.bash_profile
 mkdir -p $WORKON_HOME
 
 # Clone my repos
@@ -76,12 +76,12 @@ git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 	Linux)
 
 # Install pip
-echo "Installing pip"
+echo "Installing pip..."
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py --user
 
 # Setup zsh-syntax-highlighting
-echo "Setting zsh-syntax-highlighting"
+echo "Setting zsh-syntax-highlighting..."
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.local/zsh-syntax-highlighting
 
 # Set zsh-git-prompt
