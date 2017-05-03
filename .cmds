@@ -1,8 +1,5 @@
 # A list of useful comands
 
-# system profiler via terminal
-/usr/sbin/system_profiler
-
 # get serial number
 system_profiler SPHardwareDataType
 
@@ -21,17 +18,11 @@ launchctl load -w /Library/LaunchAgents/net.juniper.pulsetray.plist
 # lock screen
 /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
 
-# show encrypted storage volumes
-diskutil corestorage list
-
 # unlock encrypted disk
 diskutil corestorage unlockVolume UUID -stdinpassphrase
 
 # sleep from terminal
 pmset sleepnow
-
-# release/renew DHCP
-sudo ipconfig set (DEVICEINTERFACE) DHCP
 
 # xcode license
 sudo xcrun cc
@@ -55,7 +46,7 @@ chflags nohidden ~/Library
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 # create bootable img
-hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/os.iso
+hdiutil convert -format UDRW -o /path/to/target.img /path/to/os.iso
 
 # create bootable disk
 sudo dd if=/path/to/downloaded.img of=/dev/rdiskN bs=1m
@@ -63,7 +54,7 @@ sudo dd if=/path/to/downloaded.img of=/dev/rdiskN bs=1m
 # if ARD locks screen
 ps -ax | grep AppleVNCServer
 
-# convert autopkg recipe to "proper" xml
+# xml formatting
 plutil -convert xml1 /path/to/recipe
 
 # get 10 largests dirs
@@ -122,13 +113,11 @@ sudo dseditgroup -o edit -n /Local/Default -a everyone -t group lpadmin
 openssl rand -base64 6
 
 # Install setuptools/pip/virtualenv
-wget https://bootstrap.pypa.io/ez_setup.py
-python ez_setup.py --user
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py --user
 pip install –user virtualenv
 
-# Check hash of Munki .dmg
+# Check hash
 shasum -a 256 /path/to/dmg
 
 # Restart ARD
@@ -136,7 +125,7 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 # Start ARD with access rights for admins
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -users admin -privs -all -restart -agent -menu
 
-# Read property from .plist
+# Read property from .plist with PlistBuddy
 /usr/libexec/PlistBuddy  -c "print :CFBundleVersion" /Applications/$APP.app/Contents/Info.plist
 
 # Add quarantine attribute
