@@ -5,7 +5,6 @@
 """""""""""""""""
 " Vim-plug setup
 """""""""""""""""
-
 " Set dir
 call plug#begin('~/.vim/plugged')
 
@@ -36,6 +35,10 @@ call plug#end()
 " Airline
 """""""""
 set laststatus=2
+let g:airline_theme='molokai'
+let g:airline_section_b = '%{strftime("%c")}'
+let g:airline_section_y = 'BN: %{bufnr("%")}'
+let g:airline#extensions#tabline#enabled = 1
 
 """"""""
 " CtrlP
