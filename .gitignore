@@ -5,4 +5,4 @@
 .vim/plugged
 .zsh/zsh-git-prompt
 .zsh/cache
-.vim/autoload/plug.vim
+.vim/autoload
