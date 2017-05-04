@@ -13,6 +13,7 @@ source ~/.zsh/bindkeys.zsh
 source ~/.zsh/history.zsh
 source ~/.zsh/completion.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/osx-functions.zsh
 if which passpie > /dev/null; then eval "$(passpie complete zsh)"; fi
 ;;
 	Linux)
