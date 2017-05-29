@@ -178,3 +178,6 @@ security find-identity -v
 
 # Sign a profile
 security cms -S -N "Developer ID Installer" -i /path/to/your.mobileconfig -o /path/to/your/signed/output.mobileconfig
+
+# Convert .avi to .mp4
+ffmpeg -i Input.avi -vcodec copy -acodec copy Output.mp4
