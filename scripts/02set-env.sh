@@ -10,6 +10,9 @@ curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs https://raw.githubuserconte
 case `uname` in
 	Darwin)
 
+echo "Darwin kernel detected." 
+sleep 2
+
 # Install brew
 echo "Installing/updating brew..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -18,29 +21,35 @@ brew update && brew upgrade
 # Install brew packages
 echo "Installing brew packages..."
 
-# Install and configure git
+# Install git via brew
 brew install git
+
+# Configure git
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
+git config --global core.excludesfile $HOME/.gitignore
+echo .DS_Store >> $HOME/.gitignore
 
 # Install other packages via brew
-brew install python
-brew install wget
-brew install tmux
-brew install htop
-brew install passpie
-brew install sf-pwgen
-brew install zsh
-brew install zsh-syntax-highlighting
-brew install vim --env-std --with-override-system-vim
-brew install diff-so-fancy
-brew install diffoscope
-brew install ripgrep
-brew install ranger
-brew install nmap
-brew install cmus
+brew install \
+	python \
+	wget \
+	tmux \
+	htop \
+	passpie \
+	sf-pwgen \
+	zsh \
+	zsh-syntax-highlighting \
+	vim --env-stf --with-override-system-vim \
+	diff-so-fancy \
+	diffoscope \
+	ripgrep \
+	ranger \
+	nmap \
+	cmus
+
 brew tap caskroom/cask
 
 # Install pip packages
@@ -75,6 +84,9 @@ git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 ;;
 	Linux)
 
+echo "Linux kernel detected."
+sleep 2
+
 # Install pip
 echo "Installing pip..."
 wget https://bootstrap.pypa.io/get-pip.py
@@ -94,9 +106,10 @@ curl https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/diff-so-fan
 curl https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/third_party/diff-highlight/diff-highlight --output $HOME/.local/bin/diff-highlight
 curl https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/lib/diff-so-fancy.pl --output $HOME/.local/bin/lib/diff-so-fancy.pl --create-dirs
 
-chmod +x $HOME/.local/bin/diff-so-fancy
-chmod +x $HOME/.local/bin/diff-highlight
-chmod +x $HOME/.local/bin/lib/diff-so-fancy.pl
+chmod +x \
+	$HOME/.local/bin/diff-so-fancy \
+	$HOME/.local/bin/diff-highlight \
+	$HOME/.local/bin/lib/diff-so-fancy.pl
 
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 
