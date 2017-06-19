@@ -40,11 +40,6 @@ let g:airline_section_b = '%{strftime("%c")}'
 let g:airline_section_y = 'BN: %{bufnr("%")}'
 let g:airline#extensions#tabline#enabled = 1
 
-""""""""
-" CtrlP
-""""""""
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
 """""
 " UI
 """""
@@ -74,8 +69,6 @@ colorscheme zenburn " Set colourscheme
 """""""""""""
 " Keybindings
 """""""""""""
-map lb i " Insert line break [lb]
-
 map <C-p> :w<CR>:!python %<CR> " Run as Python script [Ctrl+p]
 
 " Manage splits
@@ -95,17 +88,6 @@ map <leader>et :tabe %%
 " Shortcuts
 """""""""""
 command! PU PlugUpdate | PlugUpgrade
-
-"""""""""""""""""""
-" yank to clipboard
-"""""""""""""""""""
-if has("clipboard")
-  set clipboard=unnamed " copy to the system clipboard
-
-  if has("unnamedplus") " X11 support
-    set clipboard+=unnamedplus
-  endif
-endif
 
 """"""""
 " .vimrc
