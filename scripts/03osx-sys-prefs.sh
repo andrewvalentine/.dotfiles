@@ -25,6 +25,13 @@ defaults write com.apple.menuextra.clock IsAnalog -int 0
 # autohide
 defaults write com.apple.dock autohide -int 1 && killall Dock
 
+## Firewall configuration
+FW="/usr/libexec/ApplicationFirewall/socketfilterfw"
+
+$FW --setallowsigned on
+$FW --setallowsignedapp off
+$FW --setglobalstate on
+
 if [[ $HW == *"iMac"* ]]; then
 	
 	# Enable right click
