@@ -2,9 +2,11 @@
 export PATH=$PATH:/usr/local/sbin:$HOME/.gems/bin
 
 # Setup terminal, and turn on colors
+autoload -U colors
+colors
 export TERM=xterm-256color
 export CLICOLOR=1
-export LSCOLORS=Gxfxcxdxbxegedabagacad
+export LSCOLORS=exfxcxdxbxegcxabagacad
 
 # Enable color in grep
 export GREP_OPTIONS='--color=auto'
