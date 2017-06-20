@@ -69,8 +69,6 @@ colorscheme zenburn " Set colourscheme
 """""""""""""
 " Keybindings
 """""""""""""
-map <C-p> :w<CR>:!python %<CR> " Run as Python script [Ctrl+p]
-
 " Manage splits
 nnoremap <C-J> <C-W><C-J> "Ctrl-j to move down a split  
 nnoremap <C-K> <C-W><C-K> "Ctrl-k to move up a split  
