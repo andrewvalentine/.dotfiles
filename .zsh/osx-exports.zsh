@@ -25,12 +25,12 @@ else
 fi
 
 # SSH
-export SSH_KEY_PATH="~/.ssh/dsa_id"
+export SSH_KEY_PATH=$HOME/.ssh/dsa_id
 
 # Gem
 export GEM_HOME=$HOME/.gems
 
 # Virtualenv settings
-export WORKON_HOME=~/Envs
-export VIRTUALENV_PYTHON=`which python`
+export WORKON_HOME=$HOME/Envs
+export VIRTUALENVWRAPPER_PYTHON=`which python2`
 source /usr/local/bin/virtualenvwrapper.sh
