@@ -6,7 +6,7 @@
 " Vim-plug setup
 """""""""""""""""
 " Set dir
-call plug#begin('~/.vim/plugged')
+call plug#begin('$HOME/.vim/plugged')
 
 " Plugins
 
@@ -28,6 +28,8 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 
 Plug 'darfink/vim-plist'
 
+Plug 'lambdalisue/vim-pager'
+
 " Initialize plugin system
 call plug#end()
 
@@ -43,27 +45,29 @@ let g:airline#extensions#tabline#enabled = 1
 """""
 " UI
 """""
+set nocompatible " macOS keyboard compatibility
 set ignorecase " Ignore case when searching
-
 set hlsearch " Highlight search results
-
 set tabstop=4 " Four space tab
-
 set shiftwidth=4 " Set autoindent
-
 set showmatch " Show matching parentheses
-
 set showmode " Show edit mode
-
 set number " Show line numbers
-
 set backspace=2 " Normalise backspace in iTerm2
+set clipboard=unnamed " Use macOS clipboard
+set mouse=a " Mouse on everywhere
+
+""""""""""""
+" Formatting
+""""""""""""
+set wrap
+set linebreak
+set nolist
 
 """"""""""""""""""
 " Colors and Fonts
 """"""""""""""""""
-syntax enable " Syntax highlighting
-
+syntax on " Syntax highlighting
 colorscheme zenburn " Set colourscheme
 
 """""""""""""
