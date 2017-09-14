@@ -181,3 +181,12 @@ security cms -S -N "Developer ID Installer" -i /path/to/your.mobileconfig -o /pa
 
 # Convert .avi to .mp4
 ffmpeg -i Input.avi -vcodec copy -acodec copy Output.mp4
+
+# Bypass EULA when mounting .dmg
+yes | hdiutil attach some_dmg_with_EULA.dmg > /dev/null
+
+# Clear old xauth sessions
+xauth list | cut -f1 -d\  | xargs -i xauth remove {}
+
+# Check currently in use graphics driver (Linux only)
+lspci -nnk | grep -i vga -A3 | grep 'in use'
