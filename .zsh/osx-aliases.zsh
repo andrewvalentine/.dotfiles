@@ -1,3 +1,7 @@
+#--------
+# General
+#--------
+
 # listing
 alias ll='ls -aGFhl'
 alias ls='ls -GFh'
@@ -47,6 +51,13 @@ alias grep='grep --color=auto'
 # remount ejected usb
 alias reup="sudo kextunload /System/Library/Extensions/IOUSBMassStorageDriver.kext && sudo kextload /System/Library/Extensions/IOUSBMassStorageDriver.kext"
 
+#---------
+# Software
+#---------
+
+alias pip=`which pip2`
+alias python=`which python2`
+
 #--------------
 # Munki aliases
 #--------------
@@ -67,34 +78,3 @@ alias msup="defaults read /Library/Preferences/ManagedInstalls"
 
 # MSC
 alias msc="open /Applications/Managed\ Software\ Center.app"
-
-#---------------
-# Pkgsrc aliases
-#---------------
-
-#-------------
-# pkgin
-#-------------
-alias pkls="pkgin list"
-alias pka="pkgin avail"
-alias pks="pkgin search"
-alias pkug="pkgin upgrade"
-
-alias pki="sudo pkgin install"
-alias pkup="sudo pkgin update"
-alias pkr="sudo pkgin remove"
-alias pkar="sudo pkgin autoremove"
-alias pkfu="sudo pkgin full-upgrade"
-alias pkc="sudo pkgin clean"
-alias pupu="sudo pkgin update && sudo pkgin upgrade"
-alias parc="sudo pkgin autoremove && sudo pkgin clean"
-alias puke="pupu && parc"
-
-#-----------------
-# Todolist aliases
-#-----------------
-alias tdl="todolist list"
-alias tda="todolist a"
-alias tdlt="todolist l due tod"
-alias tdlm="todolist l due tom"
-alias tdc="todolist c"
