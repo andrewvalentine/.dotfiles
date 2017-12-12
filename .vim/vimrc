@@ -30,6 +30,12 @@ Plug 'darfink/vim-plist'
 
 Plug 'lambdalisue/vim-pager'
 
+Plug 'davidhalter/jedi-vim'
+
+Plug 'jacoborus/tender.vim'
+
+Plug 'danro/rename.vim'
+
 " Initialize plugin system
 call plug#end()
 
@@ -37,7 +43,8 @@ call plug#end()
 " Airline
 """""""""
 set laststatus=2
-let g:airline_theme='molokai'
+"let g:airline_theme='molokai'
+let g:airline_theme= 'tender'
 let g:airline_section_b = '%{strftime("%c")}'
 let g:airline_section_y = 'BN: %{bufnr("%")}'
 let g:airline#extensions#tabline#enabled = 1
@@ -55,7 +62,7 @@ set showmode " Show edit mode
 set number " Show line numbers
 set backspace=2 " Normalise backspace in iTerm2
 set clipboard=unnamed " Use macOS clipboard
-set mouse=a " Mouse on everywhere
+"set mouse=a " Mouse on everywhere
 
 """"""""""""
 " Formatting
@@ -68,7 +75,8 @@ set nolist
 " Colors and Fonts
 """"""""""""""""""
 syntax on " Syntax highlighting
-colorscheme zenburn " Set colourscheme
+"colorscheme zenburn " Set colourscheme
+colorscheme tender " Set colourscheme
 
 """""""""""""
 " Keybindings
