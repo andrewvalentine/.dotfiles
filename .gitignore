@@ -6,3 +6,4 @@
 .zsh/zsh-git-prompt
 .zsh/cache
 .vim/autoload
+*.itermcolors
