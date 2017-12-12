@@ -6,7 +6,7 @@ case "$OSTYPE" in
 	darwin*)
 source ~/.zsh/colors.zsh
 source ~/.zsh/osx-exports.zsh
-source ~/.zsh/zsh-git-prompt/zshrc.sh
+#source ~/.zsh/zsh-git-prompt/zshrc.sh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/osx-aliases.zsh
 source ~/.zsh/bindkeys.zsh
@@ -37,6 +37,11 @@ bindkey "^a" beginning-of-line
 bindkey "^e" end-of-line
 bindkey "^f" forward-word
 bindkey "^b" backward-word
+
+#------
+# FPATH
+#------
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 #------------
 # USER CONFIG
