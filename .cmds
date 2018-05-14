@@ -191,3 +191,15 @@ xauth list | cut -f1 -d\  | xargs -i xauth remove {}
 # Check currently in use graphics driver (Linux only)
 lspci -nnk | grep -i vga -A3 | grep 'in use'
 cat /proc/driver/nvidia/version
+
+# Inspect kexts
+# Find kexts
+/usr/bin/mdfind 'kMDItemFSName=*.kext'
+# Find running kexts
+kexstat -l
+
+# Show hidden files
+CMD + Shift + .
+
+# Get IP address
+ipconfig getifaddr en0
