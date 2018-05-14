@@ -1,91 +1,96 @@
-""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " => My .vimrc
-""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim-plug setup
-"""""""""""""""""
-" Set dir
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set Vim-plug home
 call plug#begin('$HOME/.vim/plugged')
 
 " Plugins
-
 Plug 'vim-airline/vim-airline'
-
 Plug 'vim-airline/vim-airline-themes'
-
 Plug 'airblade/vim-gitgutter'
-
 Plug 'w0rp/ale'
-
 Plug 'junegunn/vim-github-dashboard'
-
 Plug 'junegunn/goyo.vim'
-
 Plug 'mattn/gist-vim'
-
 Plug 'JamshedVesuna/vim-markdown-preview'
-
 Plug 'darfink/vim-plist'
-
 Plug 'lambdalisue/vim-pager'
-
 Plug 'davidhalter/jedi-vim'
-
 Plug 'jacoborus/tender.vim'
-
 Plug 'danro/rename.vim'
 
 " Initialize plugin system
 call plug#end()
 
-"""""""""
-" Airline
-"""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Airline status line setup
+""""""""""""""""""""""""""""""""""""""""""""""""""
 set laststatus=2
-"let g:airline_theme='molokai'
 let g:airline_theme= 'tender'
 let g:airline_section_b = '%{strftime("%c")}'
 let g:airline_section_y = 'BN: %{bufnr("%")}'
 let g:airline#extensions#tabline#enabled = 1
 
-"""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " UI
-"""""
-set nocompatible " macOS keyboard compatibility
-set ignorecase " Ignore case when searching
-set hlsearch " Highlight search results
-set tabstop=4 " Four space tab
-set shiftwidth=4 " Set autoindent
-set showmatch " Show matching parentheses
-set showmode " Show edit mode
-set number " Show line numbers
-set backspace=2 " Normalise backspace in iTerm2
-set clipboard=unnamed " Use macOS clipboard
-"set mouse=a " Mouse on everywhere
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Ignore case when searching
+set ignorecase
 
-""""""""""""
+" Highlight search results
+set hlsearch
+
+" Set 1 tab to = 4 spaces
+set tabstop=4
+set shiftwidth=4
+
+" Show matching parentheses
+set showmatch 
+
+" Show line nunmbers
+set number
+
+" Normalise backspace in iTerm2
+set backspace=2
+
+" Use macOS clipboard
+set clipboard=unnamed
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " Formatting
-""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Word wrap without line breaks
 set wrap
 set linebreak
 set nolist
 
-""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors and Fonts
-""""""""""""""""""
-syntax on " Syntax highlighting
-"colorscheme zenburn " Set colourscheme
-colorscheme tender " Set colourscheme
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Syntax highlighting
+syntax on
+" Set colourscheme
+try
+	colorscheme tender
+catch
+endtry
 
-"""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybindings
-"""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " Manage splits
-nnoremap <C-J> <C-W><C-J> "Ctrl-j to move down a split  
-nnoremap <C-K> <C-W><C-K> "Ctrl-k to move up a split  
-nnoremap <C-L> <C-W><C-L> "Ctrl-l to move right a split  
-nnoremap <C-H> <C-W><C-H> "Ctrl-h to move left a split
+" Ctrl-j to move down a split  
+nnoremap <C-J> <C-W><C-J> 
+" Ctrl-k to move up a split  
+nnoremap <C-K> <C-W><C-K>
+" Ctrl-l to move right a split  
+nnoremap <C-L> <C-W><C-L>
+" Ctrl-h to move left a split
+nnoremap <C-H> <C-W><C-H>
 
 " Edit files in current directory
 cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
@@ -94,14 +99,14 @@ map <leader>es :sp %%
 map <leader>ev :vsp %%
 map <leader>et :tabe %%
 
-"""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shortcuts
-"""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 command! PU PlugUpdate | PlugUpgrade
 
-""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " .vimrc
-""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " Source the vimrc file after saving it
 augroup reload_vimrc " {
     autocmd!
