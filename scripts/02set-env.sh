@@ -1,4 +1,4 @@
-#!/bin/bash
+#/usr/local/share/zsh/site-functions/prompt_pure_setup!/bin/bash
 
 # Make sure we're in $HOME
 cd $HOME
@@ -56,7 +56,8 @@ brew tap caskroom/cask
 echo "Installing pip packages..."
 pip install --upgrade pip setuptools
 pip install csvkit
-pip install virtualenv virtualenvwrapper
+pip install virtualenv 
+pip install virtualenvwrapper
 pip install ipython
 
 # Setup VirtualEnv space
@@ -112,6 +113,12 @@ chmod +x \
 	$HOME/.local/bin/lib/diff-so-fancy.pl
 
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+
+# Setup Pure promt
+curl -o $HOME/.dotfiles/.zsh/pure.zsh https://raw.githubusercontent.com/sindresorhus/pure/master/pure.zsh
+curl -o $HOME/.dotfiles/.zsh/async.zsh https://raw.githubusercontent.com/sindresorhus/pure/master/async.zsh
+ln -s $HOME/.dotfiles/.zsh/pure.zsh /usr/local/share/zsh/site-functions/prompt_pure_setup
+ln -s $HOME/.dotfiles/.zsh/async.zsh /usr/local/share/zsh/site-functions/async
 
 ;;
 esac

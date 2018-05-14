@@ -5,5 +5,7 @@
 .vim/plugged
 .zsh/zsh-git-prompt
 .zsh/cache
+.zsh/async.zsh
+.zsh/pure.zsh
 .vim/autoload
 *.itermcolors

@@ -55,8 +55,8 @@ alias reup="sudo kextunload /System/Library/Extensions/IOUSBMassStorageDriver.ke
 # Software
 #---------
 
-alias pip=`which pip2`
-alias python=`which python2`
+alias pip="/usr/local/bin/pip3"
+alias python="/usr/local/bin/python3"
 
 #--------------
 # Munki aliases

@@ -203,3 +203,12 @@ CMD + Shift + .
 
 # Get IP address
 ipconfig getifaddr en0
+
+# Mount .dmg r/w
+hdiutil attach -owners on your.dmg -shadow
+
+# Convert .dmg back to r/o
+hdiutil convert -format UDZO -o new.dmg your.dmg -shadow
+
+# Check Crypt logs
+sudo /usr/bin/log show --predicate '(subsystem == "com.grahamgilbert.crypt")' --style syslog --debug --info --last 24h
