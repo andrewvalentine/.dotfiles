@@ -61,6 +61,12 @@ set backspace=2
 set clipboard=unnamed
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
+" Wildmenu setup
+""""""""""""""""""""""""""""""""""""""""""""""""""
+set wildmenu
+set wildmode=list:full,full
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " Formatting
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Word wrap without line breaks
