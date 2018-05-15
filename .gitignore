@@ -1,4 +1,5 @@
 .DS_Store
+.iterm2_profile/com.googlecode.iterm2.plist
 .ssh/
 .vim/.netrwhist
 .vim/bundle
