@@ -212,3 +212,6 @@ hdiutil convert -format UDZO -o new.dmg your.dmg -shadow
 
 # Check Crypt logs
 sudo /usr/bin/log show --predicate '(subsystem == "com.grahamgilbert.crypt")' --style syslog --debug --info --last 24h
+
+# Convert .icns to .png
+sips -s format png /path/to/pic.icns --out /path/to/pic.png
