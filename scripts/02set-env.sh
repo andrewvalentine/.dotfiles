@@ -82,6 +82,11 @@ git clone https://github.com/olivierverdier/zsh-git-prompt.git $HOME/.zsh/zsh-gi
 echo "Setting up diff-so-fancy..."
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 
+# Get colorschemes
+echo "Getting colorschemes..."
+curl -o $HOME/.dotfiles/iterm2_profile/Solarized-Dark.itermcolors https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors
+curl -o $HOME/.dotfiles/iterm2_profile/Snazzy.itermcolors https://raw.githubusercontent.com/sindresorhus/iterm2-snazzy/master/Snazzy.itermcolors
+
 ;;
 	Linux)
 

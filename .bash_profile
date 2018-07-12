@@ -44,3 +44,5 @@ else
 fi
 ;;
 esac
+
+export PATH="$HOME/.cargo/bin:$PATH"

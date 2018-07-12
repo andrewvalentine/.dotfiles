@@ -1,6 +1,3 @@
-# PATH
-export PATH=$PATH:/usr/local/sbin:$HOME/.gems/bin
-
 # Setup terminal, and turn on colors
 autoload -U colors
 colors
@@ -30,7 +27,14 @@ export SSH_KEY_PATH=$HOME/.ssh/dsa_id
 # Gem
 export GEM_HOME=$HOME/.gems
 
+# Go
+export GOPATH=$HOME/go
+
 # Virtualenv settings
 export WORKON_HOME=$HOME/Envs
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
+
+# PATH
+export PATH=$PATH:/usr/local/sbin:$GEM_HOME/bin
+#export PATH=$PATH:/usr/local/sbin:$GEM_HOME/bin:$GO_HOME/bin

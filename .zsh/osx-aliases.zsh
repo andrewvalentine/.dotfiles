@@ -44,6 +44,8 @@ alias bubu='brew update && brew upgrade'
 alias cf='caffeinate'
 alias pw='/usr/local/bin/sf-pwgen'
 alias afw='sudo /usr/libexec/ApplicationFirewall/socketfilterfw'
+alias deluged='/Applications/Deluge.app/Contents/MacOS/deluged'
+alias deluge='/Applications/Deluge.app/Contents/MacOS/deluge-console'
 
 # grep with color
 alias grep='grep --color=auto'

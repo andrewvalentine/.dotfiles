@@ -1,4 +1,5 @@
-autoload -U compinit && compinit                                                                                       
+autoload -U compinit
+compinit                                                                                       
 zmodload -i zsh/complist
 
 # match uppercase from lowercase
