@@ -32,5 +32,5 @@ export GEM_HOME=$HOME/.gems
 
 # Virtualenv settings
 export WORKON_HOME=$HOME/Envs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_PYTHON=`which python`
 source /usr/local/bin/virtualenvwrapper.sh
