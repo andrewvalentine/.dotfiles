@@ -179,6 +179,9 @@ security find-identity -v
 # Sign a profile
 security cms -S -N "Developer ID Installer" -i /path/to/your.mobileconfig -o /path/to/your/signed/output.mobileconfig
 
+# Strip signing from profile
+security cms -D -i /path/to/signed.mobileconfig -o /path/to/designed.mobileconfig
+
 # Convert .avi to .mp4
 ffmpeg -i Input.avi -vcodec copy -acodec copy Output.mp4
 
@@ -215,3 +218,35 @@ sudo /usr/bin/log show --predicate '(subsystem == "com.grahamgilbert.crypt")' --
 
 # Convert .icns to .png
 sips -s format png /path/to/pic.icns --out /path/to/pic.png
+
+# Get macOS installer app version
+/usr/libexec/PlistBuddy -c 'Print :System\ Image\ Info:version' '/Applications/Install macOS High Sierra.app/Contents/SharedSupport/InstallInfo.plist'
+
+# Configure git repo to use specific deploy key
+git config core.sshCommand "ssh -i ~/.ssh/deploy_key -F /dev/null"
+
+# Capture packet trace
+sudo tcpdump -i BSDname -s 0 -B 524288 -w ~/Desktop/DumpFile01.pcap
+
+# Read packet trace
+tcpdump -s 0 -n -e -x -vvv -r ~/Desktop/DumpFile01.pcap
+
+# Query kext database
+sqlite3 /var/db/SystemPolicyConfiguration/KextPolicy
+SELECT * FROM kext_policy;
+
+# Certificate commands
+# Find multiple installed certificates matching search string
+security find-certificate -a -c "Bristol" /Library/Keychains/System.keychain
+# Delete certificate from system keychain by common name
+sudo security delete-certificate -c "University of Bristol Windows CA" /Library/Keychains/System.keychain
+# Find password by label
+security find-generic-password -l "UoB wired 802.1x configuration"
+# Find password by type as defined by Keychain Access
+security find-generic-password -D "802.1X Password"
+# Delete generic password by label
+security delete-generic-password -l "UoB wired 802.1x configuration"
+# Delete generic password by type as defined by Keychain Access
+security delete-generic-password -D "802.1X Password"
+# Delete 802.1x password
+
