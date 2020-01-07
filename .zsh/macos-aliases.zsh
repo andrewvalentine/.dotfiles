@@ -56,7 +56,7 @@ alias reup="sudo kextunload /System/Library/Extensions/IOUSBMassStorageDriver.ke
 #---------
 
 alias pip="/usr/local/bin/pip3"
-alias python="/usr/local/bin/python3"
+alias python="/usr/local/opt/python@3.8/bin/python3"
 
 #--------------
 # Munki aliases
@@ -78,3 +78,8 @@ alias msup="defaults read /Library/Preferences/ManagedInstalls"
 
 # MSC
 alias msc="open /Applications/Managed\ Software\ Center.app"
+
+#------------
+# SSH aliases
+#------------
+alias munkireport="app-dc1-munkireport-p0.isys.bris.ac.uk"
