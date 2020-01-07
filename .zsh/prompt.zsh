@@ -1,4 +1,5 @@
-autoload -U promptinit; promptinit
+autoload -Uz promptinit
+promptinit
 prompt pure
 #function git_prompt_info {
 #  local ref=$(=git symbolic-ref HEAD 2> /dev/null)
