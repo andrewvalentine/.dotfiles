@@ -12,6 +12,7 @@ source ~/.zsh/osx-aliases.zsh
 source ~/.zsh/bindkeys.zsh
 source ~/.zsh/history.zsh
 source ~/.zsh/completion.zsh
+source ~/.zsh/corrections.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/osx-functions.zsh
 if which passpie > /dev/null; then eval "$(passpie complete zsh)"; fi
@@ -25,6 +26,7 @@ source ~/.zsh/unix-exports.zsh
 source ~/.zsh/bindkeys.zsh
 source ~/.zsh/history.zsh
 source ~/.zsh/completion.zsh
+source ~/.zsh/corrections.zsh
 source ~/.local/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ;;
 esac
