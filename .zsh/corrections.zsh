@@ -1,2 +1,4 @@
 setopt CORRECT
 setopt CORRECT_ALL
+
+CORRECT_IGNORE_FILE='.*'
