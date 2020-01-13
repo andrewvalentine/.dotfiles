@@ -11,6 +11,7 @@ alias l='ls -GFh'
 alias music='cd /Users/andrew/Music'
 alias mky="cd /Volumes/munki_repo"
 alias override="cd ~/Library/AutoPkg/RecipeOverrides/"
+alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
 
 # open cwd
 alias o='open .'
@@ -46,6 +47,7 @@ alias pw='/usr/local/bin/sf-pwgen'
 alias afw='sudo /usr/libexec/ApplicationFirewall/socketfilterfw'
 alias deluged='/Applications/Deluge.app/Contents/MacOS/deluged'
 alias deluge='/Applications/Deluge.app/Contents/MacOS/deluge-console'
+alias mullvad='/Applications/Mullvad\ VPN.app/Contents/Resources/mullvad'
 
 # grep with color
 alias grep='grep --color=auto'
