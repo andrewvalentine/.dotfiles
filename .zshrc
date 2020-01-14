@@ -5,15 +5,14 @@
 case "$OSTYPE" in
 	darwin*)
 source ~/.zsh/colors.zsh
-source ~/.zsh/osx-exports.zsh
-#source ~/.zsh/zsh-git-prompt/zshrc.sh
+source ~/.zsh/macos-exports.zsh
 source ~/.zsh/prompt.zsh
-source ~/.zsh/osx-aliases.zsh
+source ~/.zsh/macos-aliases.zsh
 source ~/.zsh/bindkeys.zsh
 source ~/.zsh/history.zsh
 source ~/.zsh/completion.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/osx-functions.zsh
+source ~/.zsh/macos-functions.zsh
 if which passpie > /dev/null; then eval "$(passpie complete zsh)"; fi
 ;;
 	linux*)
